@@ -1,0 +1,1458 @@
+body{
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.mainPage {
+    margin-top: 150px;
+        margin-top: 150px;
+    padding-bottom: 70px;
+}
+.mainHeaderWrapper {
+    top: 0;
+}
+.mainContentWrapper{
+      width: 1100px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: -74px;
+      padding-bottom: 50px;
+}
+.checkoutHeaderSecureButton{
+    float: left;
+    z-index: 6;
+    position: relative;
+    /* cursor: pointer; */
+}
+ .itemStructureTdInfo4 .itemCostBitcoinIcon img {
+    width: 14px;
+    padding-right: 2px;
+}
+
+.itemStructureTdInfo4 .itemCostBitcoinIcon .itemCostValue {}
+
+.itemStructureTdInfo4 .itemCostValue {
+    font-weight: 600;
+}
+#productTableView3_wrapper .dt-buttons {
+    /* position: absolute; */
+    /* right: 242px; */
+    /* top: 0px; */
+    position: relative;
+    /* width: 250px; */
+    background-color: white;
+    /* border-radius: 4px; */
+    /* border: 2px solid red; */
+    height: 28px;
+    /* border: 1px solid #bcc5e2; */
+    overflow: hidden;
+    padding-top: 3px;
+    margin: 0 auto;
+    margin-bottom: 19px;
+    margin-top: 9px;
+    text-align: center;
+}
+
+#productTableView3_wrapper a.dt-button {
+    color: black;
+    outline: none;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+    background-color: white;
+    padding-right: 11px;
+    padding-left: 12px;
+    /* height: 150px; */
+    padding-bottom: 3px;
+    border-left: 1px solid #bcc5e2;
+    border-left: 1px solid #bcc5e2;
+    margin-left: 0px;
+    border-radius: 0px;
+    /* border-left: 0px; */
+}
+#productTableView3_wrapper .buttons-excel {
+    border-left: 0px solid #bcc5e2!important;
+}
+#productTableView3{
+    display: none;
+}
+.dataTables_filter{
+    display: none;
+}
+.dataTables_info{
+    display: none;
+}
+#productTableView3_paginate{
+    display: none;
+}
+.itemStructureRemoveIcon {
+    right: 16px;
+    position: absolute;
+    top: 23px;
+    cursor: pointer;
+}
+.itemWrapper {
+    display: flex;
+    cursor: pointer;
+}
+.checkoutHeaderSecureIconStructure{
+    width: 32px;
+    height: 32px;
+    background-color: #f9c500;
+    border-radius: 30px;
+    text-align: center;
+}
+.checkoutHeaderSecureIconStructure img{
+    position: relative;
+    margin-top: 8px;
+}
+.checkoutHeaderMainTitle{
+    width: 110px;
+    height: 19px;
+    border-radius: 100px;
+    background-color: #000000;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 5px;
+    float: inherit;
+    margin-top: 4px;
+    padding-left: 10px;
+    margin-left: -14px;
+    z-index: 5;
+    position: relative;
+}
+.checkoutHeaderSecureButtonStructure{
+    float: right;
+    margin-right: 145px;
+    margin-bottom: -30px;
+}
+.checkoutHeaderBackButtonStructure{
+    float: left;
+    cursor: pointer;
+}
+.checkoutHeaderBackButtonTitleIcon{
+    margin-right: 7px;
+}
+.checkoutMainContent{
+        width: 812px;
+    margin-left: auto;
+    margin-right: auto;
+    clear: both;
+    top: 22px;
+    position: relative;
+}
+.checkoutMainContent .mainTitle{
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-color: #5a5a59;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+}
+.mainSectionsStructure{
+    width: 100%;
+    clear: both;
+    margin-top: 10px;
+    display: inline-block;
+}
+.mainSectionsStructure .leftSection{
+        width: 490px;
+    
+    border-radius: 3px;
+    padding-bottom: 26px;
+    float: left;
+        position: relative;
+}
+.mainSectionsStructure .rightSection{
+        width: 306px;
+        position: relative;
+        border-radius: 3px;
+        background-color: #ffffff;
+        float: right;
+        padding-top: 15px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-bottom: 15px;
+}
+.sectionHeaderButtonTitleStructure{
+    width: 163px;
+    height: 64px;
+    border-radius: 0px;
+    background-color: #ffffff;
+    float: left;
+    text-align: center;
+    padding-left: 46px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 21px;
+    cursor: pointer;
+    color: #bdc7d6;
+}
+.contentSection {
+    background-color: white;
+    margin-bottom: 19px;
+    padding: 16px;
+    border-radius: 5px;
+}
+.contentSection .shippingMethodSectionContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 26px;
+}
+.contentSection .shippingMethodSectionContent .shippingCompanyOptionStructure {
+    /* width: 133px; */
+    width: 100%;
+    flex-basis: 33%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: -23px;
+}
+.contentSection .contentSectionTitle {
+    font-weight: bold;
+    text-align: center;
+}
+.contentSection .contentSectionTitle::after {
+    content: "";
+    display: block;
+    width: 85%;
+    height: 3px;
+    margin: 11px auto 0 auto;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.contentSection #emailAddressContent {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: center;
+}
+.sectionHeaderButtonTitleActive{
+    box-shadow: inset 0 -3px 0 0 black;
+    color: black;
+}    
+.sectionHeaderButtonIcon{
+    float: left;
+}
+.sectionHeaderButtonTitle{
+        float: left;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: center;
+    padding-top: 3px;
+    padding-left: 8px;
+}
+.sectionHeaderButtonTitleComplete{
+    color: #00dfa1;
+}
+.sectionHeaderButtonTitleStructureType2{
+        padding-left: 45px;
+}
+.sectionHeaderButtonTitleStructureType3{
+        padding-left: 36px;
+}
+.contentSection1{
+        top: 25px;
+        position: relative;
+        padding-left: 45px;
+        padding-bottom: 30px;
+        padding-top: 0px;
+}
+.shippingOptionStructure {
+    padding-left: 31px;
+}
+.shippingOptionStructure:first-child {
+    margin: 26px 0 4px 0;
+}
+.shippingCompanyOptionStructure .optionContent,
+.shippingOptionStructure .optionContent
+{
+        /* width: 281px; */
+        /* height: 32px; */
+        font-size: 14px;
+        letter-spacing: 0.2px;
+        color: #bdc7d6;
+        cursor: pointer;
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+        display: inline-block;
+}
+.shippingOptionStructure:hover{
+ 
+}
+.shippingOptionBussinessDay{
+    margin-top: 5px;
+}
+
+.shippingCompanyOptionStructure img,
+.shippingOptionStructure img {
+        float: left;
+    margin-right: 7px;
+    top: 1px;
+    position: relative;
+}
+.checkoutMainContent .itemStructure{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        border-bottom: 2px solid rgba(128, 128, 128, 0.05);
+        /* border-top: 2px solid rgba(128, 128, 128, 0.05); */
+        margin-bottom: 10px;
+        height: 75px;
+        clear: both;
+        padding-left: 15px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        padding-right: 45px;
+        position: relative;
+}
+.checkoutMainContent  .itemStructure .itemImage{
+    width: 76px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.checkoutMainContent .itemStructure .itemImage img{
+     width: 76px;
+     /* height: 64px; */
+     border-radius: 1px;
+     background-image: radial-gradient(circle at 50% 50%, #ffffff, #b1b5b9);
+}
+.checkoutMainContent  .itemStructure  .itemStructureTd_2{
+    float: left;
+    padding-left: 13px;
+    width: 64px;
+    white-space: nowrap;
+}
+.checkoutMainContent  .itemStructureTdInfo1{
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.checkoutMainContent  .itemStructureTdInfo2{
+     clear: both;
+    font-size: 14px;
+    /* font-weight: 600; */
+    line-height: 1.5;
+    /* margin-left: 31px; */
+    margin-top: 0px;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+}
+.checkoutMainContent  .itemStructureTdInfo3{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    float: left;
+}
+.checkoutMainContent  .itemStructureTdInfo4{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+    float: right;
+    position: absolute;
+    right: 20px;
+}
+.checkoutMainContent  .itemStructureTdInfo5{
+        width: 185px;
+        text-align: left;
+        font-size: 14px;
+        font-weight: 600;
+        padding-top: 46px;
+        /* padding-right: 32px; */
+        /* line-height: 1.5; */
+        align-content: end;
+        position: absolute;
+        left: 104px;
+        bottom: 16px;
+}
+.rightSectionMainTitle{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: center;
+}
+.rightSectionMainTitle:after {
+    content: "";
+    display: block;
+    width: 80%;
+    height: 2px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 10px auto 0 auto;
+}
+.orderSummaryStructure {
+    width: 81%;
+    display: flex;
+    margin: auto;
+    padding: 12px 16px;
+    border-radius: 7px;
+    justify-content: space-between;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+.itemCounterTitle{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    float: right;
+}
+.summeryInfoSeparateLine{
+    height: 1px;
+    background-color: #ebedf5;
+    width: 100%;
+    clear: both;
+    top: 9px;
+    position: relative;
+    margin-bottom: 21px;
+}
+.summeryInfoTrStructure{
+    clear: both;
+}
+.summeryInfoTdStructure{
+    float: left;
+    width: 50%;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.summeryInfoRightTdStructure{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+.summeryInfoTdTotalStructure{
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: left;
+    float: right;
+    /* width: 42%; */
+    /* margin-right: 17px; */
+}
+.summeryInfoRightTdTotalStructure{
+    font-size: 14px;
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin-left: 4px;
+}
+.actionButtonsStructure {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    bottom: -40px;
+    position: absolute;
+}
+
+.summeryInfoResumeShoppingButton{
+        clear: both;
+        width: 205px;
+        height: 23px;
+        border-radius: 100px;
+        background-color: #cdd8e3;
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: black;
+        padding-top: 9px;
+        padding-bottom: 3px;
+        top: 22px;
+        position: relative;
+        margin-bottom: 17px;
+        cursor: pointer;
+        margin-right:  10px;
+        font-size: 11px;
+}
+.contentSection0{
+    padding-top: 22px;
+}
+
+.contentSection2{
+    
+}
+.contentSectionHidden{
+    display: none;
+}
+.sectionHeaderButton{
+    display: inline-block;
+}
+
+.summeryInfoResumeCheckoutButton{
+   width: 136px;
+   height: 23px;
+   border-radius: 100px;
+   background-color: #9bd3b3;
+   text-transform: uppercase;
+   font-size: 13px;
+   font-weight: bold;
+   letter-spacing: 0.5px;
+   text-align: center;
+   color: black;
+   white-space: nowrap;
+   padding: 10px 45px 3px 45px;
+   opacity: 0;
+   /* top: 22px; */
+   margin: 38px auto;
+   position: relative;
+   cursor: pointer;
+   /* margin-top: 10px; */
+   /* margin-left: 45px; */
+   /* margin-right: auto; */
+   /* bottom: -44px; */
+}
+.summeryInfoResumeCheckoutButtonHidden{
+    display: none;
+}
+.whatsupInfoStructure{
+        position: absolute;
+    bottom: -62px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.whatsappInfoNumberStructure{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: inline-block; */
+    width: 135px;
+    margin-top: 3px;
+}
+.whatsappInfoIcon{
+        float: left;
+}
+.whatsappInfoNumber{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: center;
+    float: left;
+    margin-left: 8px;
+    margin-top: -2px;
+}
+.contentSection2Structure{
+    padding-left: 46px;
+}
+.contentSection2Title{
+     font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+}
+.contentSecSection2Structure{
+    margin-top: 23px;
+    padding-right: 25px;
+}
+.contentSecSection2Radio{
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 0.6px;
+    position: relative;
+    text-align: left;
+    float: left;
+    margin-right: 24px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 22px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    color: #bdc7d6;
+}
+.contentSecSection2RadioActive{
+    font-weight: bold;
+    color:black;
+    letter-spacing: 0.6px;
+}
+.contentSecSection2Radio img{
+    margin-right: 8px;
+    position: absolute;
+    top: 1px;
+    margin-left: -22px;
+}
+.contentSecSection2RadioHidden{
+    display: none;
+}
+.contentSecSection2RadioActive{
+    display: block;
+}
+.contentSection2tabTableStructure{
+    clear: both;
+    top: 10px;
+    position: relative;
+}
+.contentSection2tabTableTr{
+    background-color: #ebedf5;
+    height: 32px;
+}
+.contentSection2tabTableTrWhite{
+    background-color: white;
+}
+.contentSection2tabTableTdTitle{
+    float: left;
+    width: 142px;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    padding-left: 8px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-top: 8px;
+}
+.contentSection2tabStructure{
+    top: 22px;
+    position: relative;
+}
+.contentSection2tabTableTdValue{
+     font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    padding-top: 7px;
+}
+.contentSection2tabTableTdValueCost{
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    text-align: right;
+    color: #3F51B5;
+    padding-top: 7px;
+    padding-right: 8px;
+}
+.contentSection2tabButton {
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: solid 1px #e5eafe;
+    float: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    padding-left: 12px;
+    padding-right: 11px;
+    padding-top: 5px;
+    cursor: pointer;
+    margin-right: 5px;
+    padding-bottom: 4px;
+}
+.contentSection2tabButtonsStructure{
+    position: relative;
+    margin-top: 30px;
+}
+.contentSection2tabInfoStructure{
+    clear: both;
+    top: 27px;
+    position: relative;
+    width: 340px;
+    margin-bottom: 24px;
+    left: 5px;
+    margin-top: 12px;
+    margin-bottom: 41px;
+}
+.contentSection2InfoDot {
+    width: 4px;
+    height: 4px;
+    background-color: #000000;
+    float: left;
+    position: absolute;
+    left: -4px;
+    top: 1px;
+}
+.contentSection2Info {
+    clear: both;
+    position: relative;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+.contentSection2InfoValue {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.3px;
+    float: left;
+    margin-top: -5px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+}
+.orderInProccessStructure{
+    display: none;
+}
+.orderInProccessStructure{
+    padding-left: 65px;
+    padding-right: 65px;
+    padding-top: 30px;
+    text-align: center;
+}
+.orderInProccessStructure .mainImages{
+        position: relative;
+        margin: 0 auto;
+        width: 201px;
+        display: none;
+}
+.orderInProccessStructure .mainImages img{
+        float: left;
+    margin-right: 10px;
+    width: 90px;
+}
+.orderInProccessStructure .mainTitleSection{
+    clear: both;
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    /* text-align: center; */
+    color: #000000;
+    padding-top: 25px;
+}
+.orderInProccessStructure .secTitleSection{
+        font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    margin-top: 2px;
+}
+.orderInProccessStructure .orderIdBox{
+    width: 336px;
+    height: 48px;
+    border-radius: 2px;
+    background-color: #5a5a59;
+    margin-top: 32px;
+    padding-top: 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+.orderIdWrapper{
+    opacity: 0;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.orderInProccessStructure .infoContent1{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+    margin-top: 32px;
+    opacity: 0;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.orderInProccessStructure .infoContent2{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+    cursor: pointer;
+    color: #bdc7d6;
+    text-decoration: underline;
+    display: none;
+}
+.orderInProccessStructure .infoContent3{
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        line-height: 1.5;
+        letter-spacing: 0.2px;
+        margin-top: 25px;
+        text-decoration: underline;
+        display: none;
+}
+.orderInProccessStructure .continueButton{
+        width: 155px;
+        height: 32px;
+        border-radius: 100px;
+        background-color: #000000;
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding-top: 9px;
+        color: white;
+        font-weight: 400;
+        margin: 0 auto;
+        margin-top: 25px;
+        cursor: pointer;
+        text-align: center;
+        margin-bottom: 17px;
+}
+.contentSection3Info{
+    position: relative;
+        padding-left: 10px;
+    padding-right: 10px;
+}
+.infoContent4{
+    border-radius: 2px;
+    background-color: #ebedf5;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    text-align: left;
+        margin-top: 12px;
+        display: none;
+}
+.contentSection3InfoDot {
+        width: 4px;
+    height: 4px;
+    background-color: #000000;
+    float: left;
+    position: absolute;
+    left: -3px;
+    top: 8px;
+}
+.contentSection3InfoValue {
+    clear: both;
+    position: relative;
+    margin-bottom: 0px;
+    display: inline-block;
+    font-size: 14px;
+	font-weight: 600;
+	line-height: 1.5;
+	letter-spacing: 0.5px;
+}
+
+.contentSection .shippingMethodSectionContent .shippingCompanyOptionStructure.active .optionContent,
+.contentSection .shippingOptionSectionContent .shippingOptionStructure.active .optionContent
+{
+    color: black;
+}
+.shippingOptionAddressMemberInputsStructure {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+.shippingOptionAddressMemberTitle {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #000000;
+    /* margin-top: 32px; */
+    margin-bottom: 8px;
+}
+.shippingOptionAddressMemberChangeButton{
+        width: 136px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: solid 1px #7d808b;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #000000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    padding-top: 5px;
+    margin-top: 16px;
+    cursor: pointer;
+}
+.shippingOptionAddressMemberUpdateButton{
+          width: 136px;
+          height: 32px;
+          color: white;
+          border-radius: 100px;
+          background-color: #00e1a6;
+          /* border: solid 1px #7d808b; */
+          font-size: 12px;
+          font-weight: 600;
+          line-height: 1.5;
+          letter-spacing: 0.2px;
+          color: white;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          text-align: center;
+          padding-top: 7px;
+          margin-top: 16px;
+          cursor: pointer;
+          clear: both;
+          margin-right: 67px;
+          /* position: relative; */
+          float: right;
+          margin-bottom: 24px;
+}
+.shippingOptionAddressMemberFillInputsStructure{
+    display: none;
+}
+.shippingOptionAddressMemberFillInputsStructureDisplay{
+    display: block;
+}
+shippingOptionAddressMemberFillInputTitle {
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color: #000000;
+}
+.shippingOptionAddressMemberInputsStructureDisplay{
+    display: none;
+}
+.shippingOptionAddressMemberChangeButtonDisplay{
+    display: none;
+}
+.shippingOptionAddressMemberFillInputsStructureDisplay{
+    display: block;
+}
+.shippingOptionAddressMemberFillInputTitle {
+       font-size: 12px;
+       font-weight: 600;
+       letter-spacing: 0.6px;
+       text-align: left;
+       color: #000000;
+       margin-top: 11px;
+       width: 141px;
+       float: left;
+       /* font-size: 14px; */
+       /* font-weight: 700; */
+       /* letter-spacing: 1px; */
+       /* color: #000000; */
+}
+.shippingOptionAddressMemberFillInput {
+    margin-top: 3px;
+        width: 50%;
+    float: left;
+}
+.shippingOptionAddressMemberFillInput input {
+    /* padding: 8px; */
+    width: 200px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 12px;
+    border-radius: 30px;
+    border: solid 1px #7d808b;
+    /* border: 1px solid #ececec; */
+    box-shadow: 0px 0px 0px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    border-radius: 4px;
+    border: 1px solid #bcc5e2;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+}
+.shippingOptionAddressMemberFillInputTitleZipCode{
+    width: 70px!important;
+}
+.shippingOptionAddressMemberFillInputTitleStNum{
+ width: 70px!important;   
+}
+.sectionHeaderButtonIconComplete{
+    display: none;
+    position: relative;
+    top:3px;
+}
+.pac-container{
+        min-width: 300px;
+    margin-left: -50px;
+}
+.summeryInfoSendOrderRequest{
+        clear: both;
+        width: 214px;
+        /* display: none; */
+        height: 23px;
+        border-radius: 100px;
+        background-color: #00e1a6;
+        font-size: 11px;
+        font-weight: bold;
+        letter-spacing: 0.5px;
+        text-align: center;
+        color: white;
+        padding-top: 9px;
+        top: 22px;
+        position: relative;
+        margin-bottom: 17px;
+        cursor: pointer;
+        margin: 0 auto;
+}
+.summeryInfoSendOrderRequestDisplay{
+    display: block;
+}
+.productsLoadingIcon{
+    text-align: center;
+    padding-bottom: 70px;
+    padding-top: 70px;
+    color: #424242;
+}
+.emptyCartBoxStructure {
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        /* height: 95px; */
+        /* padding-top: 85px; */
+        background-color: white;
+        margin-bottom: 18px;
+        /* top: 10px; */
+        position: relative;
+        font-weight: bold;
+        /* line-height: 1.25; */
+        display: none;
+        /* letter-spacing: 0.2px; */
+}
+#cartResults {
+    margin-top: 20px;
+}
+#cartResults .mainIconAnimation {
+    width: 1;
+    position: relative;
+    margin: auto;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.wireInfoSection {
+    display: none;
+}
+
+.wireInfoMessage {
+    clear: both;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding-top: 33px;
+    padding-bottom: 21px;
+    /* border: 2px solid #000000; */
+    text-align: center;
+}
+
+.wireInfoSecMessage {
+    font-size: 12px;
+    font-weight: 300;
+    margin-top: 0px;
+}
+.summeryInfoRightTdStructureLine {
+    width: 106%;
+    height: 1px;
+    margin-left: -2%;
+    background-color: rgb(125, 128, 139);
+    margin-top: -11px;
+    position: relative;
+}
+#shippingCostTitleValue {
+    color: #7d808b;
+}
+.summeryInfoResumeCheckoutButtonNotActive {
+    display: none;
+}
+.shippingOptionAddressMemberCloseUpdateButton {
+    width: 136px;
+    height: 32px;
+    border-radius: 100px;
+    background-color: #ffffff;
+    border: solid 1px #7d808b;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    color: #000000;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-align: center;
+    padding-top: 6px;
+    margin-top: 16px;
+    cursor: pointer;
+    clear: both;
+    position: relative;
+    top: 48px;
+}
+#productTableView3_wrapper .buttons-print {
+    display: none;
+}
+.checkoutSeparateLineStructure {
+    height: 2px;
+    width: 100%;
+    margin-top: 15px;
+    background-color: rgb(245, 247, 251);
+}
+.dt-buttons{
+    display: block;
+}
+.shippingOptionAddressMemberMainTitle{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #000000;
+        margin-top: 0px;
+    margin-bottom: 14px;
+}
+.shippingOptionAddressMemberStructure {
+    clear: both;
+    margin-top: 23px;
+    padding-left: 28px;
+    display: inline-block;
+}
+.leftSectionWrapper {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #f5f5f3c7;
+    padding-bottom: 51px;
+}
+span.summeryInfoTdTotalStructureTitle {
+    display: inline-block;
+    float: left;
+    /* font-weight: 600; */
+}
+@media screen and (max-width: 1020px){
+.summeryInfoResumeCheckoutButton{
+    opacity: 1;
+    position: fixed;
+    bottom: 0px!important;
+    width: 100%;
+    margin-left: 0px;
+    left: 0px;
+    border-radius: 0px;
+    height: 40px;
+    padding-top: 22px;
+    font-size: 17px;
+    z-index: 20;
+    background-color: #627fe7;
+}
+.summeryInfoSendOrderRequestMobile{
+    clear: both;
+    width: 214px;
+    /* display: none; */
+    height: 23px;
+    border-radius: 100px;
+    background-color: #00e1a6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: white;
+    padding-top: 9px;
+    top: 22px;
+    position: relative;
+    margin-bottom: 17px;
+    cursor: pointer;
+    opacity: 1;
+    position: fixed;
+    bottom: 0px!important;
+    width: 100%;
+    margin-left: 0px;
+    left: 0px;
+    border-radius: 0px;
+    height: 40px;
+    padding-top: 22px;
+    font-size: 17px;
+    z-index: 99;
+    top: unset;
+    margin-bottom: 0px;
+}
+.checkoutMainContent{
+    top: 0px;
+    width: 100%;
+    background-color: white;
+}
+.mainContentWrapper{
+    margin-top: 0px;
+    width: 100%!important;
+    padding-bottom: 10px;
+}
+.mainPage{
+    margin-top: 88px;
+}
+.checkoutHeaderStructure{
+        position: absolute;
+        right: 15px;
+        top: 8px;
+        display: none;
+}
+.checkoutMainContent .mainTitle{
+    width: 100px;
+    text-align: center;
+    /* font-size: 20px; */
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    /* top: 23px; */
+    margin-top: 13px;
+    display: inline-block;
+    position: fixed;
+    top: -4px;
+    z-index: 99;
+    right: 17px;
+    margin-left: -50px;
+    background-color: transparent;
+}
+.checkoutHeaderMainTitle{
+    display: none;
+}
+.mainSectionsStructure .leftSection{
+        width: 100%;
+        padding-bottom: 0px;
+}
+.sectionHeaderButtonTitleStructure{
+    width: 33.3%;
+    height: 56px;
+    padding-left: unset;
+    padding-top: 8px;
+}
+.sectionHeaderButton{
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 85px;
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.09);
+}
+.mainSectionsStructure{
+        margin-top: 0px;
+}
+.sectionHeaderButtonTitleWrapper {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+    padding-top: 7px;
+}
+.dataTables_wrapper{
+    display: none;
+}
+.checkoutMainContent  .itemStructure .itemImage{
+        width: 135px;
+}
+.checkoutMainContent .itemStructure .itemImage img{
+    width: 135px;
+    height: 114px;
+}
+.checkoutMainContent .itemStructure{
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 121px;
+        margin-bottom: 7px;
+}
+.checkoutMainContent  .itemStructure  .itemStructureTd_2{
+        width: unset;
+}
+
+.contentSection0{
+    padding-top: 3px;
+    border-top: 20px solid #f5f7fb;
+    /* border-left: 10px solid #f5f7fb; */
+    /* border-right: 10px solid #f5f7fb; */
+    background-color: white;
+    margin-top: 51px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.checkoutMainContent  .itemStructureTdInfo5{
+        position: absolute;
+    right: 12px;
+    bottom: 8px;
+}
+.mainSectionsStructure .rightSection{
+    display: none;
+}
+.footerStructure,.secFooterStructure{
+    display: none;
+}
+.cartIconMobile{
+    display: none;
+}
+.mobileSecuredIcon{
+    position: fixed;
+    top: 20px;
+    right: 125px;
+}
+.mobileCountItemsStructure{
+    visibility: hidden;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    margin-bottom: 13px;
+    margin-top: 12px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    text-transform: uppercase;
+}
+.sectionHeaderStructure{
+    background-color: #f5f7fb;
+}
+.emptyCartBoxStructure{
+    padding-bottom: 40px;
+}
+.contentSection1{
+    background-color: white;
+    padding-top: 27px;
+    top: 52px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    /* display: inline-block; */
+    padding-bottom: 15px;
+    border-top: 20px solid #f5f7fb;
+}
+.shippingOptionAddressMemberCloseUpdateButton{
+        position: fixed;
+        width: 50%;
+        bottom: 0px;
+        top: unset;
+        margin-left: 0px;
+        left: 0px;
+        border-radius: 0px;
+        opacity: 1;
+        position: fixed;
+        bottom: 0px!important;
+        width: 50%;
+        margin-left: 0px;
+        left: 0px;
+        border-radius: 0px;
+        height: 62px;
+        padding-top: 22px;
+        font-size: 17px;
+        z-index: 99;
+        background-color: #161616;
+        margin-top: 0px;
+        color: white;
+        border: none;
+}
+.shippingOptionAddressMemberUpdateButton{
+        position: fixed;
+    width: 50%;
+    bottom: 0px;
+    top: unset;
+    margin-left: 0px;
+    left: 0px;
+    border-radius: 0px;
+    opacity: 1;
+    position: fixed;
+    bottom: 0px!important;
+    width: 50%;
+    margin-left: 0px;
+    right: 0px;
+    border-radius: 0px;
+    height: 62px;
+    padding-top: 22px;
+    font-size: 17px;
+    z-index: 99;
+    background-color: #627fe7;
+    margin-top: 0px;
+    color: white;
+    left: unset;
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+.contentSection2 {
+    background-color: white;
+    padding-top: 27px;
+    top: 53px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 13px;
+    /* display: inline-block; */
+    padding-bottom: 15px;
+    border-top: 20px solid #f5f7fb;
+    position: relative;
+    width: 100%;
+    /* padding-left: 0px; */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+.contentSection2Structure {
+    padding-left: 0px;
+}
+.wireInfoMessage{
+        padding-bottom: 40px;
+}
+.contentSecSection2Radio{
+        margin-right: 0px;
+        width: 33%;
+        text-align: center;
+        padding-left: 0px;
+}
+.contentSecSection2RadioWrapper {
+    position: relative;
+    margin: 0 auto;
+    display: inline-block;
+}
+.contentSecSection2Structure {
+    margin-top: 14px;
+    padding-right: 25px;
+}
+.orderInProccessStructure{
+    border-top: 20px solid #f5f7fb;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+.orderInProccessStructure .orderIdBox{
+        width: 100%;
+}
+.wishlistIconMobile{
+    display: none;
+}
+.shippingOptionAddressMemberStructure {
+    margin-left:  0px;
+    padding-left:  0px;
+}
+
+.shippingOptionAddressMemberFillInputsStructureDisplay {
+    width: 100%;
+}
+
+.shippingOptionAddressMemberFillInputTitle {
+    width: 50%;
+}
+
+.shippingOptionAddressMemberFillInput {
+    width: 50%;
+}
+
+.shippingOptionAddressMemberFillInput input {
+    width: 100%;
+}
+.summeryInfoSendOrderRequest {
+    display: none;
+}
+}

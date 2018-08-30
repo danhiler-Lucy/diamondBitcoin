@@ -1,0 +1,649 @@
+.mainHeaderFixed{
+    position: fixed;
+    width: 100%;
+    z-index: 30;
+    top:0px;
+}
+.mainHeaderWrapper{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 30;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    margin: 0 auto;
+    /* border-top: 3px solid black; */
+    height: 70px;
+}
+.mobileHeaderWrapper {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background-color: #4a5862;
+    top: 0px;
+    /* padding-left: 15px; */
+    /* padding-right: 15px; */
+    padding-top: 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 60;
+    display: none;
+    /* opacity: 0; */
+}
+.navBarTitleOpacity{
+    opacity: 0.2;
+}
+.mainHeaderMinWrapper{
+    /* background-color: #ffffff!important; */
+    /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5)!important; */
+    /* top: 0px!important; */
+    /* position: fixed!important; */
+    /* z-index: 50; */
+    /* width: 100%; */
+    /* top: 0px; */
+    /* height: 73px; */
+    /* transform: translateY(-100%); */
+    /* animation: 0.5s slidedown forwards; */
+    /* display: block!important; */
+    top: 0px!important;
+    display: block!important;
+}
+@keyframes slidedown {
+    from {
+        transform: translateY(-100%);        
+    }
+    to {
+        transform: none;  
+    }
+}
+.memberShowStructure{
+    display: none;
+}
+.memberHiddenStructure{
+    
+}
+.firstNameMemberHeader{
+    text-transform: uppercase;
+}
+.mainHeaderStructure .loginButton{
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding: 8px 6px 6px 6px;
+    font-weight: 500;
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    width: 85px;
+    height: 17px;
+    background-color: #9B9B9B;
+    opacity: 1;
+    border-radius: 50px;
+    font-weight: 600;
+    /* letter-spacing: 0.5px; */
+    /* padding-top: 11px; */
+    /* padding-bottom: 11px; */
+    margin-top: 12px;
+}
+.mainHeaderStructure{
+    width: 100%;
+    height: 30px;
+    /* position: relative; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    margin-top: 10px;
+    /* float: right; */
+    position: relative;
+    margin-left: 100px;
+    /* margin: 0 auto; */
+    /* right: -7px; */
+    top: 29px;
+}
+.mainHeaderStructure .navBarTitle{
+    text-align: center;
+    float: left;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    height: 33px;
+    color: #000000;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    opacity: 0.5;
+    margin-right: 60px;
+    cursor: pointer;
+    white-space: nowrap;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    text-transform: uppercase;
+}
+.mainHeaderStructure.dark .navBarTitle {
+    color: white;
+}
+.mainHeaderStructure .navBarTitle:hover{
+    /* opacity: 1; */
+    /* font-size: 15px; */
+    /* color:white; */
+    /* font-weight: bold; */
+    /* letter-spacing: 1.5px; */
+    /* box-shadow: inset 0px -4px 0px 0px white; */
+    opacity: 1;
+}
+.mainHeaderStructure .navBarTitleActive{
+    opacity: 1;
+    font-size: 13px;
+    color:black;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    /* box-shadow: inset 0px -4px 0px 0px black; */
+}
+.memberFloatHeader  .checkOutButton{
+    text-align: center;
+    float: left;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    padding-top: 9px;
+    font-weight: 500;
+    padding-bottom: 8px;
+    opacity: 1;
+    cursor: pointer;
+    color: white;
+    width: 103px;
+    height: 17px;
+    background-color: rgb(0, 0, 0);
+    opacity: 1;
+    border-bottom-left-radius: 20px;
+    /* position: relative; */
+    /* top: -20px; */
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid #3f3f3fe6;
+    /* letter-spacing: 0.5px; */
+    /* padding-top: 11px; */
+    /* padding-bottom: 11px; */
+    margin-top: -3px;
+    position: absolute;
+    right: 0px;
+}
+.memberFloatHeader  .rightNavBarTitle{
+     text-align: center;
+     float: left;
+     font-size: 12px;
+     font-weight: 700;
+     letter-spacing: 1.5px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+     opacity: 1;
+     margin-right: 17px;
+     cursor: pointer;
+     color: black;
+     -webkit-transition: all .6s ease;
+     -moz-transition: all .6s ease;
+     -ms-transition: all .6s ease;
+     -o-transition: all .6s ease;
+     transition: all .6s ease;
+}
+.mainHeaderStructure .rightNavBarTitle:hover{
+    color:black;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+.rightNavBarStructure{
+        float: right;
+        position: relative;
+        outline: none;
+        position: fixed;
+        margin-top: 5px;
+        top: 0px;
+        right: 5%;
+        opacity: 1;
+        z-index: 50;
+}
+.memberShowDropdownButton {
+    font-size: 10px;
+    padding-left: 12px;
+}
+
+.memberShowDropdownStructure {
+    position: absolute;
+    bottom: -24px;
+    left: -94px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    visibility:hidden;
+    cursor: pointer;
+    margin-right: 17px;
+    cursor: pointer;
+    opacity:0;
+    color: #000000;
+    background-color: white;
+    width: 150px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+    text-align: left;
+     -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.memberAccountDropdownWrapper{
+    outline: none;
+    float: left;
+    display: none;
+}
+.memberShowDropdownStructureActive {
+    opacity: 1;
+    visibility:visible;
+}
+.mobileHeaderWrapper .navBarTitleLeft {
+    float: left;
+    margin-left: 15px;
+    /* display: none; */
+}
+.mobileHeaderWrapper .navBarTitleRight {
+    float: right;
+    margin-right: 15px;
+    position: relative;
+}
+.loginButton_navBarTitleActive {
+    background-color: transparent!important;
+    color: black!important;
+    border: 2px solid black;
+    font-weight: 600!important;
+    margin-top: -7px!important;
+}
+.mobileHeaderIconBubbleStructure {
+    width: 20px;
+    height: 20px;
+    background-color: #000000;
+    /* background-color: var(--pink-red); */
+    /* border: solid 2px #000000; */
+    position: absolute;
+    top: -6px;
+    border-radius: 100px;
+    right: -12px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    transform: scale(1);
+    opacity: 0;
+}
+
+.mobileHeaderIconBubbleTitle {
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    color: whitesmoke;
+    position: relative;
+    top: 1px;
+}
+.mobileHeaderIconBubbleStructureActive{
+ transform: scale(1.1);
+    
+}
+.wishlistIconMobile .mobileHeaderIconBubbleStructure{
+    /* background-color: rgb(0, 0, 0); */
+}
+.memberNotificationIcon img {
+    width: 17px;
+    float: left;
+    /* opacity: 0.5; */
+    position: relative;
+    top: 4px;
+}
+
+.memberNotificationStructure {
+    float: left;
+    position: relative;
+    left: -21px;
+    top: 5px;
+    /* cursor: pointer; */
+    display: none;
+}
+.memberNotificationResults {
+    overflow: auto;
+    max-height: 186px;
+    padding-bottom: 5px;
+}
+.memberNotificationIconDot {
+    width: 14px;
+    /* height: 5px; */
+    background-color: #637fe7;
+    border-radius: 20px;
+    float: right;
+    position: relative;
+    right: 4px;
+    /* border: 2px solid rgba(0, 0, 0, 0.08); */
+    font-size: 11px;
+    font-weight: 700;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    right: -5px;
+    top: -4px;
+    text-align: center;
+    color: white;
+}
+.memberNotificationResultStructure {
+    position: absolute;
+    left: -20px;
+    top: 39px;
+    width: 280px;
+    background-color: white;
+    /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5)!important; */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-left: 6px;
+    padding-right: 6px;
+    /* border: 2px solid #e0e0e0; */
+    box-shadow: 0px 3px 11px 0px rgba(0, 0, 0, 0.11);
+    display: none;
+    opacity: 0;
+    margin-top: -10px;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+}
+
+.memberNotificationResultItemImage img {
+    width: 50%;
+}
+
+.memberNotificationResultItem {
+    /* height: 56px; */
+    display: inline-block;
+    padding-top: 10px;
+    /* padding-bottom: 10px; */
+    border-top: 2px solid #efefef;
+    padding-bottom: 0px;
+    position: relative;
+    cursor: pointer;
+    width: 100%;
+}
+
+.memberNotificationResultItemImage {
+    /* float: left; */
+    text-align: center;
+    padding-top: 10px;
+    border-right: 2px solid #efefef;
+    /* vertical-align: middle; */
+    /* display: table-cell; */
+    position: relative;
+    top: 50%;
+    margin-top: -50%;
+}
+
+.memberNotificationResultItemTitle {
+    float: left;
+    font-weight: 700;
+    position: relative;
+    top: -1px;
+}
+.memberNotificationResultItemLeftSection {
+    float: left;
+    width: 60px;
+    height: 100%;
+    /* display: table; */
+    position: absolute;
+    /* vertical-align: middle; */
+    display: table-caption;
+}
+
+.memberNotificationResultItemRightSection {
+    float: left;
+    /* width: 77%; */
+    font-size: 12px;
+    padding-left: 76px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 10px;
+    /* margin-left: 23%; */
+}
+
+.memberNotificationResultItemDis {
+    clear: both;
+    font-size: 11px;
+    top: -1px;
+    position: relative;
+}
+
+.memberNotificationResultItemTime {
+    font-size: 9px;
+    color: grey;
+}
+.memberNotificationResultMainTitle {
+    font-size: 13px;
+    font-weight: 600;
+    float: left;
+    margin-top: 10px;
+    color: black;
+    position: relative;
+    top: 0px;
+    left: 10px;
+}
+
+.memberNotificationResultMainNewResultsCounter {
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+    /* float: left; */
+    top: 0px;
+    right: 0px;
+    color: rgba(66, 66, 66, 0.81);
+    position: relative;
+    padding-right: 14px;
+    padding-top: 10px;
+    width: 50px;
+    text-align: right;
+    cursor: pointer;
+}
+
+.memberNotificationResultMainTitleStructure {
+    margin-bottom: 3px;
+    display: inline-block;
+    width: 100%;
+}
+.memberNotificationSeeAllButtonStructure {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+    border-top: 2px solid #efefef;
+    /* color: white; */
+    padding-top: 9px;
+    padding-bottom: 4px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.memberNotificationResultMainNewResultsCounter img {
+    width: 11px;
+    /* position: relative; */
+}
+.memberNotificationIcon {
+    cursor: pointer;
+}
+.mainHeaderMinWrapper .memberNotificationResultStructure {
+    top: 42px;
+}
+.unreadNotificationIcon {
+    background-color: #637fe7;
+    width: 6px;
+    height: 6px;
+    position: absolute;
+    border-radius: 50px;
+    margin-top: 15px;
+    display: none;
+}
+.unreadNotification .unreadNotificationIcon {
+ display: block;   
+}
+.memberNotificationSeeAllButtonTitle {
+    opacity: 0.2;
+    cursor: no-drop;
+}
+.memberNotificationResultItemDisEmpty{
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.mainHeaderLogoWrapper {
+    /* display: flex; */
+    height: auto;
+    cursor: pointer;
+}
+.mainHeaderLogoWrapper svg {
+    width: 50px;
+    position: relative;
+    fill: black;
+    top: -6px;
+}
+.mainHeaderLogoText {
+    color: white;
+    padding-top: 50px;
+    padding-left: 11px;
+    white-space: nowrap;
+}
+.mainHeaderLogoText h1 {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0 0 -9px 0;
+    color: black;
+}
+.mainHeaderLogoText h4 {
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    color: black;
+    margin-top:  2px;
+}
+.mainHeaderLogoStructure {
+    /* float: left; */
+    margin-left: 10vw;
+    /* margin-bottom: 21px; */
+    margin-top: -33px;
+    position: relative;
+    display: flex;
+}
+
+.mainHeaderFixedWrapper {
+    /* background-color: #ffffff!important; */
+    /* box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5)!important; */
+    /* top: 24px!important; */
+    /* position: fixed!important; */
+    /* z-index: 50; */
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    /* margin: 0 auto; */
+    top: 0px;
+}
+div#mainHeaderWrapper {
+    display: none;
+    /* -webkit-transition: all .6s ease; */
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    /* transition: all .3s ease; */
+    top: -100px;
+    background-color: #ffffff!important;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5)!important;
+    top: -72px;
+    position: fixed!important;
+    z-index: 50;
+    width: 100%;
+    /* top: 0px; */
+    height: 73px;
+    /* transform: none; */
+    /* animation: 0.5s slidedown forwards; */
+}
+
+.mainHeaderMinWrapper .mainHeaderLogoStructure {
+    float: left;
+}
+
+.mainHeaderMinWrapper .mainHeaderFixedWrapper {
+    top: 7px;
+}
+
+.mainHeaderMinWrapper .mainHeaderLogoWrapper img {
+    width: 43px;
+    top: 40px;
+    height: auto;
+    position: relative;
+    left: 37px;
+    /* border: 2px; */
+}
+
+.mainHeaderMinWrapper .mainHeaderStructure {
+    position: relative;
+    top: 6px;
+    left: 25px;
+}
+
+.memberFloatHeader {
+    display: none;
+}
+.mainHeaderLogoWrapper img {
+    width: 57px;
+    height: auto;
+    position: relative;
+    top: 58px;
+    left: 30px;
+}
+.mainHeaderLogoWrapper .whiteLogo {display: none;}
+@media screen and (max-width: 1020px) and (min-width: 500px){
+    
+}
+
+@media screen and (max-width: 1357px){
+    .rightNavBarStructure{
+        /* right: 0px; */
+    }
+    .memberAccountDropdownWrapper{
+            position: relative;
+    top: -11px;
+    }
+    .memberNotificationStructure{
+        position: relative;
+    top: -11px;
+    }
+}
+
+.headerWidgetNews {
+    position: fixed;
+    top: -10px;
+    right: 176px;
+    height: 100px;
+    overflow: hidden;
+    transform: scale(0.7);
+    transform-origin: top right;
+}
+.navBarTitle.navBarTitleRight.wishlistIconMobile img {
+    width: 47px;
+    position: relative;
+    top: -6px;
+    right: -12px;
+}
+
+.navBarTitle.navBarTitleRight.wishlistIconMobile {
+    margin-right: 10px;
+}

@@ -1,0 +1,740 @@
+.productCardStructure .itemWrapper{
+    /* position: absolute; */
+    z-index: 5;
+    width: 100%;
+    overflow: hidden;
+    left: 0px;
+    top: 0px;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.07);
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.productCardStructure .itemWrapperFloat{
+    left: 125px;
+    top: -15px;
+    box-shadow:2px 2px 10px 1px  rgba(0, 0, 0, 0.32);
+}
+.productCardStructure .itemWrapperFloatZindex{
+    z-index: 6;
+}
+.productCardPlaceHolderTitleStructure{
+    display: none;
+}
+.moreDetailsFloatIcon {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+    display: none;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.31;
+    letter-spacing: 0.3px;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: rgba(0, 0, 0, 0.08);
+    width: 60px;
+    text-align: center;
+    border-right: 2px solid rgba(0, 0, 0, 0.01);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.01);
+    font-weight: 600;
+    padding-top: 2px;
+    display: none;
+    cursor: pointer;
+    opacity: 1;
+    padding-bottom: 1px;
+}
+
+.productCardStructure .itemStructure{
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    /* box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.32); */
+    float: left;
+    /* margin-right: 20px; */
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-bottom: 15px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    cursor: pointer;
+    position: relative;
+    background-color: #ffffff;
+}
+.productCardStructure .itemStructure:hover{
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.12);
+}
+.productCardStructure .itemStructureFloat{
+    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.32)!important;
+     
+}
+.productCardStructure .itemSection .itemImage{
+    height: auto;
+    width: 100%;
+    position: relative;
+    background-color: #ffffff;
+    padding-top: 94.5%;
+    overflow: hidden;
+    display: flex;
+    background-image: url(../../../assets/company/sampleDiamond.png?1);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-color: #d5dae7;
+    background-position-y: 32px;
+}
+.productCardStructure .itemSection .itemImage img{
+    width:100%;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    opacity: 0;
+    /* padding-top: 86%; */
+    /* position: relative; */
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+    /* top: 0px; */
+    right: 0;
+    bottom: 0px;
+}
+.productCardStructure .itemSection .itemAttrStructure{
+    font-size: 15px;
+    /* border-top: 1px solid rgba(0, 0, 0, 0.07); */
+    box-shadow: 0 -1px 0px 0 rgba(0, 0, 0, 0.08);
+    /* margin-top: -5px; */
+    padding-right: 3px;
+    padding-left: 3px;
+    height: 40px;
+    padding-top: 10px;
+    position: relative;
+    /* background-color: white; */
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    z-index: 2;
+}
+.productCardStructure .itemSection .itemCost{
+   /* float: right; */
+   margin-right: 9px;
+   margin-top: 3px;
+   font-weight: 700;
+   font-size: 16px;
+   font-weight: 600;
+   font-style: normal;
+   font-stretch: normal;
+   line-height: normal;
+   letter-spacing: 0.3px;
+   text-align: right;
+   position: absolute;
+   /* color: black; */
+   width: 100%;
+   text-align: center;
+   bottom: 3px;
+}
+.productPopupStructure  .productCardImage360{
+    width: 100%;
+    height: 100%;
+    display: none;
+    border-radius: 3px;
+    overflow: hidden;
+}
+.productCardStructure .itemSection .itemDiscount{
+       position: absolute;
+       right: 17px;
+       top: -28px;
+       /* background-color: rgb(255, 255, 255); */
+       width: 35px;
+       -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+       box-sizing: border-box;
+       padding-top: 8px;
+       height: 29px;
+       text-align: center;
+       color: white;
+       font-size: 13px;
+       font-weight: bold;
+       font-style: normal;
+       font-stretch: normal;
+       line-height: normal;
+       letter-spacing: 0.3px;
+       display: none;
+}
+.itemCardMoreDetailsButtonIcon {
+    cursor: pointer;
+}
+.productCardStructure .itemAlreadyCartStructure{
+        position: absolute;
+        right: 8px;
+        bottom: 53px;
+        z-index: 5;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.6);
+}
+.itemAlreadyCartStructureActive{
+     visibility: visible!important;
+        opacity: 1!important;
+        transform: scale(1)!important;
+}
+.productCardStructure .itemAlreadyWishListStructure{
+        position: absolute;
+        /* right: 30px; */
+        /* top: -18px; */
+        left: 1px;
+        bottom: 48px;
+        z-index: 5;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(0.6);
+}
+.itemAlreadyWishListActive{
+     visibility: visible!important;
+        opacity: 1!important;
+        transform: scale(1)!important;
+}
+.productCardStructure .itemSection .itemAttr{
+    float: left;
+    margin-left: 7px;
+    margin-top: 3px;
+    font-size: 13px;
+    line-height: 1.31;
+    letter-spacing: 0.3px;
+    text-transform: capitalize;
+}
+.productCardStructure .itemSection .itemAttr:empty{
+    display: none;
+}
+
+.productCardStructure .itemSection .floatButtonStructure{
+    position: absolute;
+    right: -16px;
+    top: 5px;
+    z-index: 1;
+    transform-origin: right!important;
+    transform: scale(.9);
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+    transition: all .4s ease;
+    display: none;
+}
+.productCardStructure .itemSection:hover .floatButtonStructure{
+    transform: scale(1);
+    opacity: 1;
+}
+
+.productCardStructure .itemSection .wishListIcon img{
+    width: 24px;
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+.productCardStructure .itemSection .floatButtonIcon{
+        background-color: white;
+        /* padding-top: 6px; */
+        border-radius: 150px;
+        /* padding-top: 10px; */
+        box-shadow: 0 1px 2px 0px rgba(128, 128, 128, 0.55);
+        text-align: center;
+        /* padding-top: 14px; */
+        /* padding-left: 4px; */
+        /* padding-right: 4px; */
+        /* padding-bottom: 5px; */
+        /* margin-bottom: 8px; */
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 8px;
+        opacity: 1;
+        -webkit-transition: all .4s ease;
+        -moz-transition: all .4s ease;
+        -ms-transition: all .4s ease;
+        -o-transition: all .4s ease;
+        transition: all .4s ease;
+        transform: scale(1);
+}
+.productCardStructure .itemSection .floatButtonIcon:hover{
+    transform: scale(1.05);
+}
+.productCardStructure .itemSection .floatButtonIcon:active{
+    transform: scale(0.9);
+}
+.productCardStructure .itemSection .image360Icon:hover{
+    transform: scale(1.03);
+}
+.productCardStructure .itemSection .image360Icon:active{
+    transform: scale(0.97);
+}
+.productCardStructure .itemSection .cartIcon img{
+    width: 24px;
+    position: absolute;
+    left: 7px;
+    top: 9px;
+}
+ .image360IconTitleCard {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    top: 0px;
+    font-size: 13px;
+    left: 3px;
+}
+.productCardStructure .image360Icon{
+    width: 30px!important;
+    height: 30px!important;
+    right: 0px;
+    top: 8px;
+    border-radius: 0px!important;
+    /* opacity: 0.5!important; */
+    /* opacity: 1; */
+    position: absolute;
+    bottom: 39px;
+    transform-origin: right;
+    width: 50px!important;
+    height: 22px!important;
+    right: 0px;
+    cursor: pointer;
+    font-size: 11px;
+    background-color: rgb(255, 255, 255)!important;
+    color: #627fe7;
+    border-top-left-radius: 10px!important;
+    border-bottom-left-radius: 10px!important;
+    /* padding-left: 8px; */
+    padding-top: 6px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 0 0px #989797!important;
+    /* transform: scale(1); */
+}
+.productCardStructure .image360Icon:hover{
+    opacity: 1!important;
+}
+
+.productCardDefaultImage .floatButtonStructureImage360{
+    display: none;
+}
+.itemCardAttrStructure{
+    display: none;
+       -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    opacity: 0;
+}
+    .itemCardAttrStructureDisplay{
+        display: block;
+    }
+    .itemCardAttrStructureOpacity{
+        opacity:1;
+    }
+    .itemCardAttrStructure .itemAttrTable{
+            background-color: white;
+    }
+    .itemCardAttrStructure .itemAttrTr{
+        height: 22px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        padding-top: 5px;
+        background-color: #ebedf5;
+    }
+    
+    .itemCardAttrStructure .itemAttrTd{
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        font-size: 12px;
+        letter-spacing: 0.3px;
+        color: #000000;
+        padding-left: 11px;
+        float: left;
+        width: 50%;
+    }
+    .itemCardAttrStructure .itemAttrTdRight{
+        font-size: 12px;
+        font-weight: bold;
+        letter-spacing: 0.3px;
+    }
+    .itemCardAttrStructure .itemAttrTrWhite{
+        background-color: white;
+    }
+    .itemCardAttrStructure  .itemCardMoreDetailsButton{
+            height: 40px;
+            background-color: white;
+            position: relative;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            cursor: pointer;
+    }
+       .itemCardAttrStructure  .itemCardMoreDetailsButtonTitle{
+            width: 100%;
+            text-align: center;
+            font-size: 12px;
+            font-weight: bold;
+            letter-spacing: 0.2px;
+            color: #000000;
+            padding-top: 13px;
+            cursor: pointer;
+    }
+    .itemCardAttrStructure  .itemCardMoreDetailsButtonIcon img{
+       position: absolute;
+       right: 6px;
+       top: 11px;
+       font-weight: 700;
+       font-size: 20px;
+       width: 17px;
+    }
+
+.productCardStructure .itemSection .wishListIcon {
+    margin-top: 48px;
+}
+.productCardStructure .loadingImage360{
+    display: none;
+        position: absolute;
+    top: 94px;
+    width: 30px;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+}
+.productCardStructure .itemSection .floatButtonStructureImage360 {
+    right: 0px;
+    /* bottom: 51px; */
+    top: 143px;
+    height: 0px;
+    /* width: 50px; */
+    /* height: 50px; */
+    transform-origin: left;
+}
+.productCardStructure  .productCardImage360{
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.productCardStructure .loadingImage360 img{
+    width: 30px;
+    opacity: 0.9;
+    -webkit-animation: rotate 2.5s .6s ease infinite;
+    animation: rotate 1.6s ease infinite;
+}
+.productCardStructure .itemCostTitle {
+    position: absolute;
+    font-size: 10px;
+    top: 16px;
+    text-align: center;
+    width: 100%;
+    left: 4px;
+    font-weight: 600;
+}
+.productCardDefaultImage .itemDiscount {
+    color: rgb(202, 202, 202)!important;
+}
+.productCardStructure {
+    position: relative;
+    margin: 0 auto;
+    width: 23%;
+    float: left;
+    margin-right: 2%;
+}
+  .itemAttrLeftStructure {
+    /* width: 100%; */
+    height: 19px;
+    /* background-color: red; */
+    overflow: hidden;
+    /* float: left; */
+    /* padding-right: 80px; */
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* left: 50%; */
+    /* margin-left: -25%; */
+    margin: 0 auto;
+    display: table;
+    top: -6px;
+    left: -2px;
+}
+.itemVideoButtonStructure img {
+    width: 100%;
+    opacity: 0.7;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    display: none;
+}
+
+.itemVideoButtonStructure {
+    width: 31px;
+    position: absolute;
+    bottom: 42px;
+    z-index: 1;
+    left: 7px;
+    cursor: pointer;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.itemSection:hover .itemVideoButtonStructure img{
+    opacity: 1;
+}
+.itemSection:hover .itemVideoButtonStructure{
+    
+}
+
+.itemFloatButtonsStructure {
+    /* position: absolute; */
+    /* bottom: 0px; */
+    /* width: 100%; */
+    /* bottom: 0px; */
+    /* background-color: #ffffffe8; */
+    /* z-index: 3; */
+    /* overflow: hidden; */
+    /* -webkit-transition: all .6s ease; */
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    /* transition: all .6s ease; */
+}
+
+.itemFloatButton {
+    float: left;
+    /* width: 50%; */
+    text-align: center;
+    padding-top:  10px;
+    padding-bottom: 2px;
+    /* box-shadow: 1px 0px 0px 0px #a4a4a4; */
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+    z-index: 3;
+}
+
+.itemSection:hover .itemFloatButtonsStructure{
+    /* bottom: 0px; */
+}
+.itemFloatCompareButton img {
+    width: 22px;
+}
+
+.itemFloatCartButton img {
+    width: 15px;
+}
+.itemSection:hover .itemFloatButton{
+    opacity: 1;
+}
+.itemFloatButton.itemFloatCompareButton {
+    position: absolute;
+    bottom: 3px;
+    left: 7px;
+}
+
+.itemFloatButton.itemFloatCartButton {
+    right: 10px;
+    bottom: 3px;
+    position: absolute;
+}
+.productCardStructure .itemSection .itemCost .itemVideoButtonStructure {
+    width: 30px;
+}
+
+.smallCard .itemVideoButtonStructure {
+    width: 23px;
+    bottom: 33px;
+}
+.itemAlreadyWishListStructure img {
+    width: 32px;
+}
+
+.itemAlreadyCartStructure img {
+    width: 22px;
+}
+.productCardStructure span.itemCostBitcoinIcon img {
+    width: 15px;
+    position: relative;
+    top: 3px;
+    margin-right:  1px;
+    margin-left: 12px;
+}
+@media screen and (max-width: 1357px){
+.productCardStructure {
+    position: relative;
+    margin: 0 auto;
+    width: 30.6%;
+    float: left;
+    margin-right: 2.5%;
+}
+
+}
+@media screen and (max-width: 1020px){
+.productCardStructure {
+    position: relative;
+    margin: 0 auto;
+    width: 47%;
+    float: left;
+    margin-right: 3%;
+}
+    .productCardStructure .itemStructure{
+          border-radius: 5px;
+          background-image: radial-gradient(circle at 50% 55%, #f2f2f2, #ffffff);
+          box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3);
+          width: 100%;
+          height: auto;
+          margin-left: 2%;
+          margin-right: 0%;
+      }
+      .productCardStructure .itemWrapper{
+          width: 100%;
+          height: auto;
+          position: relative;
+      }
+      .productCardStructure .itemSection .itemImage{
+          height: unset;
+          width: 100%;
+          padding-top: 92%;
+          position: relative;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          background-position-y: 13px;
+      }
+      .productCardStructure .itemSection .itemAttr{
+              font-size: 12px;
+                  margin-left: 4px;
+                  margin-top: 2px;
+      }
+      .productCardStructure .itemSection .itemCost {
+    font-size: 13px!important;
+    margin-top: 1px!important;
+}
+      .productCardStructure .itemSection .itemAttrStructure{
+           border-bottom-left-radius: 5px;
+           border-bottom-right-radius: 5px;
+           height: 29px;
+      }
+      .itemWrapperBox{
+              box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+              border-radius: 5px;
+              /* left: 10px; */
+              /* position: relative; */
+      }
+      .productCardStructure .itemWrapper{
+          box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.3);
+      }
+      .productCardStructure .itemSection .floatButtonStructure{
+              top: -3px;
+      }
+      .productCardStructure .itemSection .wishListIcon{
+              width: 35px;
+                height: 35px;
+      }
+      .productCardStructure .itemSection .wishListIcon img{
+              width: 20px;
+    left: 8px;
+      }
+      .productCardStructure .itemSection .floatButtonIcon{
+           width: 35px;
+                height: 35px;
+      }
+      .productCardStructure .itemSection .cartIcon img{
+              width: 18px;
+    left: 8px;
+      }
+       .results1 .productCardStructure {
+        /* width: 50%; */
+        /* margin: 0 auto; */
+        /* right: -4px; */
+        /* position: relative; */
+    }
+      .results1 .productCardStructure .itemStructure{
+              /* border-radius: 5px; */
+              /* background-image: radial-gradient(circle at 50% 55%, #f2f2f2, #bcc1c5); */
+              /* box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.3); */
+              /* width: 135px; */
+              /* height: 145px; */
+              /* margin-left: 0px; */
+              /* margin-right: 17PX; */
+      }
+     .results1  .productCardStructure .itemWrapper {
+    /* width: 135px; */
+    /* height: 129px; */
+    }
+        .results1 .productCardStructure .itemSection .itemImage {
+            /* height: 111px; */
+        }
+        .results1 .productCardStructure .itemSection .itemCost {
+            /* font-size: 11px; */
+            /* margin-top: 2px; */
+            /* position: absolute; */
+            /* left: 5px; */
+            /* top: -20px; */
+            /* color: white; */
+            /* margin-right: 0px; */
+            /* width: 100%; */
+            /* text-align: center; */
+        }
+        .results1 .productCardStructure .itemSection .itemAttr {
+            font-size: 12px;
+            margin-left: 4px;
+            margin-top: 2px;
+        }
+        .results1 .productCardStructure .itemSection .itemDiscount{
+            font-size: 10px;
+    right: 6px;
+    top: -24px;
+        }
+        .productCardStructure .itemAlreadyCartStructure{
+            width: 26px;
+            top: 6px!important;
+            right: -1px;
+        }
+        .productCardStructure .itemAlreadyCartStructure img{
+            width:100%;
+            width: 18px;
+        }
+ .itemAlreadyWishListStructure{
+     width: 26px;
+     top: -1px!important;
+     left: 0px!important;
+}
+.itemAlreadyWishListStructure img{
+    width: 28px;
+    position: absolute;
+}   
+.itemFloatButtonsStructure{
+    display: none;
+}
+}
+

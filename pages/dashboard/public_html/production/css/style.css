@@ -1,0 +1,442 @@
+
+body{
+    font-family: 'Assistant', sans-serif;
+
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.productsPopupStructure {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 60;
+    display: none;
+}
+.opacity1{
+    /*opacity: 0.1;*/
+}
+.opacity2{
+    /*opacity: 0.2;*/
+}
+.productsPopupWrapper {
+        width: 80%;
+        position: fixed;
+        margin: 0 auto;
+        background-color: #ffffff;
+        height: 80%;
+        top: 10%;
+        border: 2px solid #e6e9ed;
+        overflow: hidden;
+        left: 10%;
+        /* margin-left: -442px; */
+}
+.productPopupStructureBlur {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: rgba(49, 49, 49, 0.74);
+    height: 100%;
+    z-index: 50;
+    display: none;
+}
+.productsPopupContent{
+    overflow: auto;
+        height: 100%;
+       
+}
+.pointerDiv{
+    cursor: ponter!important;
+}
+.newOrder td:first-child{
+        border-left: 5px solid #fadf51!important;
+}
+table.dataTable thead .sorting_desc,.table.dataTable thead .sorting_asc{
+        background-color: #fadf51;
+}
+
+.newUser td:first-child {
+    border-left: 5px solid #2ecc71!important;
+}
+.emailInputValue {
+    float: left;
+    float: left;
+    clear: both;
+    resize: none;
+    border: none;
+    box-shadow: 0 0px 2px 0px #d8d8d8;
+    width: 100%;
+    font-size: 14px;
+    padding: 7px;
+    margin-top: 9px;
+}
+
+.emailContentValue {
+    float: left;
+    clear: both;
+    resize: none;
+    border: none;
+    box-shadow: 0 0px 2px 0px #d8d8d8;
+    margin-top: 10px;
+    width: 100%;
+    height: 200px;
+    font-size: 14px;
+}
+
+.emailSubmitButton {
+    clear: both;
+    background-color: #fadf51;
+    display: inline-block;
+    float: right;
+    padding: 7px;
+    width: 100px;
+    text-align: center;
+    font-weight: 600;
+    /* box-shadow: 0 0px 2px 0px #d8d8d8; */
+    margin-top: 11px;
+    border-radius: 100;
+    cursor: pointer;
+}
+
+.emailPageStructure {
+    width: 600px;
+    height: 600px;
+}
+.activeExcelIcon img {width: 24px;}
+
+.activeExcelTitle {
+    float: left;
+    position: relative;
+    top: 2px;
+    font-weight: 600;
+    left: 4px;
+}
+
+.activeExcelIcon {
+    float: left;
+}
+
+.activeExcelStructure {
+    /* background-color: white; */
+    /* width: 184px; */
+    /* height: 32px; */
+    /* margin-bottom: 20px; */
+    /* padding: 5px; */
+    /* border-radius: 100px; */
+    /* padding-left: 20px; */
+    position: relative;
+    top: -18px;
+    left: 18px;
+    cursor: pointer;
+    display: none;
+}
+
+.activeUser .approveUserButton,.activeUser .removedUserButton  {
+    display: none;
+}
+.pendingUser .blockUserButton ,.pendingUser .removedUserButton {
+    display: none;
+}
+.removedUser  .blockUserButton,.removedUser  .approveUserButton{
+    display: none;
+}
+.removedUser .removedUserButton{
+    display: block;
+}
+.markupUpdateButton{
+    display: none;
+}
+button.markupUpdateButton {
+    /* position: absolute; */
+    top: 0px;
+    width: 33px;
+    float: right;
+    cursor: pointer;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 30px;
+    color: white;
+    background-color: #26b899;
+    border: none;
+}
+
+.markupInputStructure {
+    position: relative;
+}
+
+input.markupInput {
+    width: 68px;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0px;
+    height: 30px;
+    margin-right: -20px;
+    padding: 0px;
+    padding-left: 19px;
+    /* box-shadow: inset 0px -2px 0px 0px red; */
+    border: 1px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    /* border-bottom: 2px solid red; */
+}
+.markupInputIcon {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+}
+.markupPriceNegative .markupInput{
+        border-bottom: 2px solid rgba(255, 0, 0, 0.23);
+}
+.markupPricePositive .markupInput{
+    border-bottom: 2px solid rgba(38, 184, 153, 0.43);
+}
+table th{
+    
+}
+th.markupPriceTh {
+    /* max-width: 100px!important; */
+    width: 71px!important;
+}
+th.statusTh {
+    /* max-width: 100px!important; */
+    width: 71px!important;
+     
+}
+table th,table tr, table td{
+    vertical-align: middle!important;
+}
+
+table.dataTable{
+ /*       width: unset;
+    min-width: 70%;
+    position: relative;*/
+}
+.pendingBid .disapproveBidButton {
+    width: 50%;
+    float: left;
+}
+
+.pendingBid .approveBidButton {
+    width: 50%;
+    float: left;
+}
+
+.pendingBid .approveBidButton button {
+    /* width: 50%; */
+    border-radius: 0px;
+    left: -2px;
+    position: relative;
+    float: left;
+}
+
+.pendingBid .disapproveBidButton button {
+    border-radius: 0px;
+    right: -5px;
+    float: right;
+    position: relative;
+}
+.disapprovedBid .disapproveBidButton {
+    display: none;
+}
+.approvedBid .approveBidButton {
+    display: none;
+}
+
+.bidButtonStructure {
+    display: table;
+    position: relative;
+    margin: 0 auto;
+    /* width: 20px; */
+    top: 3px;
+}
+.bidButtonStructure button{
+    border-radius: 0px;
+    padding: 4px;
+    width: 32px;
+    border: 1px solid #27211e6b!important;
+}
+.pendingBid .editBidButton {
+   display:none;
+}
+.bidButtonStructure {
+   display:none;
+}
+.pendingBid .bidButtonStructure {
+   display: block;
+}
+.editBidButton button{
+   background-color: black!important;
+   border-radius: 0px!important;
+   padding: 4px;
+   width: 34px;
+   border: 2px solid #27211e!important;
+   display: table;
+   margin: 0 auto;
+}
+img.productsOrderResults_td_image {
+    width: 65px;
+    height: 51px;
+}
+table#productsOrderResultsTable tr {
+    text-align: center;
+    border: 2px solid #f7f7f7;
+    /* border:  2px solid black; */
+}
+#productsOrderResultsTable th {
+    text-align: center;
+    font-size: 11px;
+}
+
+#productsOrderResultsTable a.btn.btn-default.buttons-csv.buttons-html5 span {
+    font-size: 10px;
+    padding: 0px;
+}
+
+#productsPopup .buttons-html5 span {
+    font-size: 11px;
+    font-weight: 700;
+}
+
+#productsPopup .buttons-html5 {
+    padding: 0px;
+    padding-left:  12px;
+    padding-right:  12px;
+    padding-bottom:  2px;
+    border-radius: 0px;
+}
+
+#productsPopup .dt-buttons.btn-group {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    float: left;
+    margin-top: 4px;
+}
+td.productsOrderResults_td_imageStructure {
+    background-color: silver;
+}
+div#productsOrderResultsTable_filter {
+    /* position: absolute; */
+    /* left: 111px; */
+    /* top: 6px; */
+    width: 0px;
+    float: left;
+    margin-left:  20px;
+    margin-top: 4px;
+}
+
+div#productsOrderResultsTable_filter label {
+    font-size: 12px;
+    font-weight: 700;
+    position: relative;
+    top: 3px;
+}
+
+div#productsOrderResultsTable_filter input {
+    position: relative;
+    top: -2px;
+}
+.productsOrderResultsInfo {
+    position: absolute;
+    right: 0px;
+    font-size: 12px;
+    top: 0px;
+    background-color: #0000000a;
+    z-index: 1;
+    padding-right:  7px;
+    padding-top:  9px;
+    padding-bottom: 7px;
+    padding-left:  14px;
+    border: 1px solid #0000001c;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+.productsOrderResultsInfo1 {
+    float: left;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.productsOrderResultsInfo2 {
+    float: left;
+    position: relative;
+    top: 6px;
+    font-size: 10px;
+}
+.showOrderProductsIcon {
+    position: relative;
+    margin: 0 auto;
+    background-color:  black;
+    color: white;
+    text-align: center;
+    width: 23px;
+    border-radius: 100px;
+    border: 2px solid white;
+    height: 23px;
+    padding-top: 0px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.adminCheckboxStructure {
+    text-align: center;
+}
+.checkboxPermissionsTitle {
+    float: left;
+    position: relative;
+    left: 5px;
+    font-size: 14px;
+    top: -1px;
+}
+
+.checkboxPermissions input {
+    float: left;
+}
+
+.checkboxPermissions {
+    clear: both;
+    cursor: pointer;
+}
+.checkboxModalPermissionsStructure  .modal-footer {
+    margin-top: 20px;
+}
+.checkboxModalPermissionsStructure {
+    width: 300px;
+    margin: 0 auto;
+    /* border-radius: 2px; */
+    /* overflow: hidden; */
+}
+
+.checkboxModalPermissionsStructure .modal-dialog {
+    width: 100%;
+}
+button.permissionsEditButton {
+    background-color:  black!important;
+    border: none!important;
+    margin: 0 auto;
+}
+.cursorPointer{
+    cursor: pointer;
+    
+}
+.cursorPointer:hover{
+    font-weight: 700;
+}
+.menuButtonHidden{
+    display:none!important;
+}
+
+.mainAnalyticsPage iframe {
+    width: 1438px;
+    border: none;
+    height: 3319px;
+    position: relative;
+    left: -279px;
+}

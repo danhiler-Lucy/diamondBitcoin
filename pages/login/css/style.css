@@ -1,0 +1,673 @@
+.mainPage {
+    margin-top: 150px;
+    margin-top: 150px;
+    padding-bottom: 140px;
+}
+
+.loginWrapper {
+    width: 300px;
+}
+.mainContentWrapper {
+    width: 800px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 21px;
+    padding-bottom: 50px;
+}
+.registerContentWrapper {
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+    z-index: -2;
+}
+.registerContentWrapper.visible {
+    opacity: 1;
+    z-index: 2;
+}
+.loginLeftContentWrapper.visible {
+    opacity: 1;
+    z-index: 2;
+}
+.mainPage .backButton {
+    position: absolute;
+    text-decoration: none;
+    top: 48px;
+    left: 73px;
+    width: 130px;
+    border: none;
+    background-color: #9B9B9B;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;
+    padding: 11px 5px;
+    border-radius: 100px;
+    /* margin-left: -37px; */
+    text-align: center;
+    cursor: pointer;
+}
+.memberShowStructure.rightNavBarStructure {
+    display: none !important;
+}
+.mainHeaderWrapper {
+    display: none;
+}
+.loginStructure {
+    display: flex;
+    text-transform: capitalize;
+}
+
+.loginMainTitleStructure {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    text-align: center;
+}
+
+.capslockTitle {
+    width: 220px;
+    text-align: right;
+    font-size: 11px;
+    /* margin-top: -30px; */
+    position: relative;
+    /* display: inline-block; */
+    top: -17px;
+    height: 0px;
+    right: 7px;
+    color: #c5c5c5;
+    display: none;
+}
+
+.loginMainTitle {
+    font-size: 27px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginSecTitle {
+    font-size: 15px;
+    margin-top: -2px;
+}
+
+.pageWrapperLoadingStructureHidden {
+    visibility: hidden;
+    opacity: 0;
+}
+
+.buttonsWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* padding-left: 16px; */
+}
+.buttonsStructure {
+    display: flex;
+    /* align-items: center; */
+    margin-top: -10px;
+    padding: 0 6px;
+    position: relative;
+}
+.forgotPasswordContentWrapper .buttonsStructure {
+    width: 289px;
+    padding: 0 7px;
+    justify-content: space-between;
+}
+.loginLeftContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 50%;
+    margin-top: 24px;
+    margin-bottom: 35px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.loginLeftContent img {
+    /* margin-right: 27px; */
+    width: 100px;
+    padding-left: 50px;
+    position: relative;
+    top: -39px;
+}
+.loginRightContent {
+    width: 50%;
+    margin-top: 24px;
+    margin-bottom: 35px;
+    border-left: 2px solid rgba(0, 0, 0, 0.13);
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 39px;
+    /* box-sizing: border-box; */
+}
+
+.loginLeftContentTitle {font-size: 27px;font-weight: 600;text-align: left;padding-left: 57px;margin-bottom: 20px;}
+
+.loginLeftContentSecTitle {
+    font-size: 15px;
+    padding-left: 14px;
+    margin-top: -2px;
+}
+
+.loginLeftContentInputStructure {
+    font-size: 15px;
+    margin-top: 22px;
+}
+
+.loginLeftContentInputWrapperTitle {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 16px;
+    font-size: 13px;
+    opacity: 1;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+.loginLeftContentInputWrapperInput {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 16px;
+    opacity: 1;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+.loginLeftContentInputWrapperInput input {
+    background-color: #E8E8E8;
+    width: 252px;
+    padding: 9px;
+    margin-top: 1px;
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    border: 0px;
+    border-radius: 6px;
+    font-family: Assistant;
+    border: 1px solid rgba(216, 216, 216, 0.43);
+    font-size: 15px;
+    /* color: white; */
+}
+
+.loginLeftContentInputWrapperInput #forgotPassEmail {
+    /* margin-left: -68px; */
+}
+
+.loginLeftContentInputWrapperInput input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #E8E8E8 inset;
+}
+
+.loginContinueButtonWrapper,
+.registerButtonWrapper {
+    width: 50%;
+}
+.loginLeftContentForgetTitle {
+    width: 269px;
+    text-align: right;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 8px;
+    cursor: pointer;
+    /* display: none; */
+}
+
+.loginLeftContentContinueButton,
+.buttonsStructure #backButton,
+.buttonsStructure .forgotPassLeftContentBackButton,
+.buttonsStructure .forgotPassLeftContentContinueButton {
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 160px;
+    /* flex-basis: 50%; */
+    background-color: #9B9B9B;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    padding: 10px 19px;
+    border-radius: 100px;
+    /* margin-left: -37px; */
+    text-align: center;
+    cursor: pointer;
+}
+.forgotPassLeftContentBackButton {
+    flex-basis: 24%;
+    position: absolute;
+    left: 13px;
+    width: 24%!important;
+}
+.buttonsStructure #submitRegisterButton {
+    flex-basis: 47%;
+    position: absolute;
+    right: 0px;
+}
+.buttonsStructure #backButton {
+    flex-basis: 15%;
+    position: absolute;
+    left: 0px;
+    width: 15%;
+}
+.registerButton {
+    margin-top: 25px;
+    /* margin-left: 66px; */
+    width: 120px;
+    background: none;
+    font-size: 17px;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.8);
+    padding: 10px 19px;
+    border-radius: 100px;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    /* margin-left: -37px; */
+    text-align: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.registerButton:hover {
+    background-color: #E5E5E5;
+}
+
+.alertPopupStructure {
+    position: absolute;
+    background-color: #000000;
+    color: #fff9f9;
+    font-size: 14px;
+    z-index: 4;
+    letter-spacing: 1px;
+    width: 227px;
+    border: 1px solid #d0d0d0;
+    border-top: 0px;
+    top: 204px;
+    text-align: center;
+    margin-left: -6px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+.registerInputRegister {
+    opacity: 1;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+
+.loginLeftContentWrapper {
+    width: 220%;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: margin .5s ease, opacity 0.2s linear;
+    margin-left: 0px;
+    opacity: 0;
+    z-index: -2;
+}
+
+.forgotPasswordContentWrapper {
+    float: right;
+    width: 50%;
+    margin-right: 17px;
+}
+
+.alertPopupTitle {
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+
+div#approvalPopupStructure {
+    position: fixed;
+    top: 50px;
+    z-index: 50;
+    left: 50%;
+    margin-left: -300px;
+    text-align: center;
+    display: none;
+    opacity: 0;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.approvalPopupStructureBlur {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    z-index: 45;
+    background-color: #bdc7d6;
+    opacity: 0.6;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+div#approvalPopupStructure .comingSoonPopupTitle {
+    font-size: 20px;
+    /* text-align: left; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 14px;
+}
+
+div#approvalPopupStructure .comingSoonPopupHeaderTitle {
+    letter-spacing: 2px;
+    padding-left: 20px;
+    text-transform: uppercase;
+}
+
+div#approvalPopupStructure .comingSoonPopupLine {
+    margin-top: 31px;
+    margin-bottom: 18px;
+}
+
+.forgotPassLeftContentContinueButton {
+    flex-basis: 42%;
+    margin-top: 31px;
+    /* width: 139px; */
+    background-color: #9B9B9B;
+    color: white;
+    padding: 9px;
+    border-radius: 100px;
+    margin-left: 11px;
+    text-align: center;
+    cursor: pointer;
+    /* float: right; */
+    position: absolute;
+    right: 8px;
+    width: 42%!important;
+}
+
+.forgotPasswordContentSuccessTitle {
+    font-weight: 700;
+}
+
+.forgotPasswordContentSuccessStructure {
+    margin-top: 32px;
+    display: none;
+}
+
+.loginLeftContentRememberTitle {
+    /* float: left; */
+    font-size: 12px;
+    width: 150px;
+    position: relative;
+    padding-left: 11px;
+    top: -16px;
+    left: 0px;
+    /* margin: 0 auto; */
+}
+
+.pageWrapperLoadingStructure {
+    display: none;
+    opacity: 0;
+}
+
+.pageWrapperLoadingStructure .mainIcon {
+    left: 18px;
+}
+
+input#loginLeftContentRememberCheckbox {
+    -webkit-appearance: checkbox;
+}
+
+.loginLeftContentInputWrapper .radioGroup {
+    margin-top: 6px;
+    display: flex;
+    padding-left: 16px;
+}
+.radio-container {
+    display: block;
+    position: relative;
+    padding-left: 19px;
+    margin-right: 23px;
+    /* margin-top: 0px; */
+    /* margin-bottom: 10px; */
+    cursor: pointer;
+    font-size: 15px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid #cfcfcf;
+}
+
+.radio-container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+.radio-container input:checked ~ .checkmark {
+    background-color: #0d0d0d;
+    border: none;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radio-container input:checked ~ .checkmark:after {
+    display: block;
+    border: none;
+}
+
+.radio-container .checkmark:after {
+ 	top: 3px;
+ 	left: 3px;
+ 	width: 9px;
+ 	height: 9px;
+ 	border-radius: 50%;
+ 	background: white;
+}
+.checkboxDescStructure {
+    width: 252px;
+    padding-left:  17px;
+    font-size: 11px;
+    margin-top:  10px;
+    text-transform: none;
+}
+@media screen and (max-width: 1020px) {
+    .mainContentWrapper {
+        width: 100%!important;
+        margin-top: 0px;
+        /* overflow: hidden; */
+    }
+    .mainPage {
+        margin-top: 0px;
+    }
+    .loginLeftContent {
+        width: 100%;
+        margin-top: 58px;
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 10px;
+        display: none;
+    }
+    .loginRightContent {
+        width: 100%;
+        margin-top: 94px;
+        text-align: center;
+        padding-left: 0px;
+        margin-bottom: 19px;
+    }
+    .loginLeftContentContinueButton {
+        /* margin-left: 0px; */
+        /* position: relative; */
+        /* margin: 0 auto; */
+        /* margin-top: 9px; */
+    }
+    .loginLeftContentInputWrapper {
+        width: 250px;
+        position: relative;
+        margin: 0 auto;
+        text-align: left;
+    }
+    .loginLeftContentInputWrapperTitle {
+        margin-left: 6px;
+        margin-bottom: 4px;
+        width: 100px;
+        text-align: left;
+    }
+    .loginLeftContentForgetTitle {
+        position: relative;
+        margin: 0 auto;
+        margin-top: 7px;
+        /* display: none; */
+        font-size: 12px;
+        right: -7px;
+    }
+    div#approvalPopupStructure {
+        width: 100%;
+        margin-left: 0px;
+        /* left: 0px; */
+        left: 50%;
+        transform: translateX(-50%);
+        max-width: 600px;
+    }
+    div#approvalPopupStructure .comingSoonPopupDesc {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 14px;
+    }
+    div#approvalPopupStructure .comingSoonPopupTitle {
+        font-size: 20px;
+    }
+    div#approvalPopupStructure .comingSoonPopupHeaderTitle {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .loginLeftContentWrapper {
+        /* width: 200%; */
+    }
+    .forgotPasswordContentWrapper {
+        /* display: none; */
+    }
+    .loginContentWrapper {
+        float: left;
+        width: 100%;
+        position: absolute;
+        top: 62px;
+    }
+    .forgotPassLeftContentContinueButton {
+        /* float: none; */
+        /* position: relative; */
+        /* margin: auto; */
+        top: 14px;
+    }
+    .forgotPassLeftContentBackButton {
+        /* position: relative; */
+        /* left: -127px; */
+        /* top: 33px; */
+        /* float: none; */
+        /* height: 0px; */
+        /* margin-top: 0px; */
+        /* margin: auto; */
+        /* bottom: 0px; */
+    }
+    .loginLeftContentRememberTitle {
+        margin: 0 auto;
+        left: -62px;
+    }
+    .registerContentWrapper.visible {
+    position: relative;
+}
+
+.mainPage .backButton {
+    display: none;
+}
+
+.loginWrapper {
+    width: 100%;
+    -
+    width: 300px;
+    max-width: 300px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.registerContentWrapper {}
+
+.loginLeftContentTitle {
+    width: 100%;
+    text-align: center;
+    padding-left:  0px;
+}
+
+.buttonsStructure {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    margin-top: 18px;
+    height: 50px;
+}
+
+.forgotPassLeftContentBackButton {
+    width: 63px!important;
+    /* flex-basis: unset; */
+    /* float: left!important; */
+    /* margin-left:  50px!important; */
+    background-color: #9b9b9b8c!important;
+    margin-top: 0px!important;
+}
+
+.forgotPassLeftContentContinueButton {
+    width: 40%!important;
+    flex-basis: unset;
+    /* float: right!important; */
+    margin-left: 50px!important;
+    margin-top: 0px!important;
+    top: 0px;
+    text-align: center!important;
+    right: 0px;
+}
+.buttonsStructure #backButton {
+    background-color: #9b9b9b8c;
+}
+}

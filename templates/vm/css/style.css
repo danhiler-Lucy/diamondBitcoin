@@ -1,0 +1,512 @@
+.vmStructure{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    z-index: 99;
+    color:white;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    opacity: 0;
+    display: none;
+}
+#userVideo {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+.productPopupMainButtonCall{
+    display: block!important;
+}
+.vmFooterStructure video {
+    width: 300px;
+    height: 225px;
+    background-color: black;
+    background-image: url(../../../assets/blacklogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.vmFooterStructure {
+    width: 1100px;
+    position: absolute;
+    margin: 0 auto;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* margin-left: 0px; */
+    /* margin-right: 0px; */
+}
+
+#guestVideo {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+.pure-form {
+    width: 10px;
+    /* opacity: 0.1; */
+    position: absolute;
+    bottom: 0px;
+}
+
+.pure-form input {
+    width: 10px;
+    opacity: 0.05;
+}
+
+.pure-button {
+    color: white;
+    opacity: 0.1;
+}
+.vmCallButtonStructure {
+    position: fixed;
+    bottom: 7px;
+    left: 10%;
+    background: #000000;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    /* font-family: fantasy; */
+    width: 100px;
+    text-align: center;
+    /* padding-top: 5px; */
+    /* padding-bottom: 5px; */
+    border-radius: 100px;
+    height: 33px;
+    font-weight: 400;
+    /* border: 2px solid #00e1a6; */
+    z-index: 20;
+}
+
+.vmCallButton {
+    font-size: 13px;
+    position: relative;
+    top: 8px;
+}
+.vmMainDeskStructure {
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    top: 0px;
+    height: 100%;
+    background-color: white;
+}
+
+.vmMainDeskHeaderStructure {
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 36px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.vmMainTitle {
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 15px;
+    text-align: center;
+    color: #ffffff;
+    position: relative;
+    top: 3px;
+}
+
+.vmMainTitleStructure {
+    background-color: black;
+    height: 25px;
+}
+
+.vmMainDeskHeaderNavBar {
+    color: black;
+    float: left;
+    width: 20%;
+    height: 26px;
+    text-align: center;
+    position: relative;
+    padding-top: 10px;
+    cursor: pointer;
+    top: 0px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.vmMainDeskContentStructure {
+    height: 600px;
+    background-color: #ffffff;
+}
+
+.vmMainDeskHeaderNavBarActive {
+    background-color: #627fe7;
+    color: white;
+}
+.vmFooterChatStructure {
+    position: absolute;
+    background-color: #ffffff;
+    bottom: 0px;
+    width: 500px;
+    height: 223px;
+    left: 300px;
+    border-top: 2px solid black;
+}
+
+.vmFooterChatStructure {}
+
+.vmFooterChatInputStructure {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+}
+
+.vmFooterChatInputStructure input {
+    width: 100%;
+    border: none;
+    border-top: 2px solid black;
+    background-color: #f3f3f3;
+    padding: 0px;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 11px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.vmFooterChatInputIcon {
+    color: black;
+    font-weight: 700;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    border-left: 1px solid rgba(0, 0, 0, 0.18);
+    padding-left: 10px;
+    cursor: pointer;
+}
+.vmMainDeskContentWrapper {
+    height: 100%;
+    overflow: scroll;
+    /* display: inline-block; */
+    position: relative;
+     opacity: 0; 
+}
+#vmDeskSection3_table_wrapper .dt-buttons {
+    position: absolute;
+    right: 282px;
+    top: 7px;
+    background-color: white;
+    border-radius: 4px;
+    /* border: 2px solid red; */
+    height: 28px;
+    border: 1px solid #bcc5e2;
+    overflow: hidden;
+    padding-top: 3px;
+}
+#vmDeskSection3_table_wrapper a.dt-button {
+    color: black;
+    outline: none;
+    text-transform: none;
+    text-decoration: none;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+    background-color: white;
+    padding-right: 11px;
+    padding-left: 12px;
+    /* height: 150px; */
+    padding-bottom: 3px;
+    border-left: 1px solid #bcc5e2;
+    border-left: 1px solid #bcc5e2;
+    margin-left: 0px;
+    border-radius: 0px;
+    /* border-left: 0px; */
+}
+#vmDeskSection3_table_wrapper .buttons-copy {
+    border-left: 0px solid #bcc5e2!important;
+}
+#vmDeskSection3_table_wrapper .dataTables_filter input {
+    /* width: 210px; */
+    /* width: 168px; */
+    /* height: 24px; */
+    /* border-radius: 100px; */
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #000000;
+    border-radius: 4px;
+    border: 1px solid #bcc5e2;
+    padding-left: 10px;
+    padding-top: 7px;
+    padding-bottom: 9px;
+}
+#vmDeskSection3_table_wrapper .dataTables_filter {
+    position: absolute;
+    top: 7px;
+    right: 50px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: #000000;
+}
+#vmDeskSection3_table {
+    clear: both;
+    top: 46px;
+    width: 100%;
+    position: relative;
+    color: black;
+    box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    border: none;
+    background-color: white;
+    /* padding: 20px; */
+    /* border: 16px solid white; */
+    max-width: 100%;
+}
+#vmDeskSection3_table thead {
+    box-shadow: inset 0px -2px 0px 0px #f5f7fb;
+}
+#vmDeskSection3_table th {
+    font-size: 12px;
+    border: none;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #000000;
+    padding-bottom: 13px;
+    background-image: none;
+    padding: 0px;
+    padding-bottom: 21px;
+    padding-top: 21px;
+}
+#vmDeskSection3_table .resultsViewStructure3_tr {
+    /* border-bottom: 2px solid rgb(245, 247, 251); */
+    box-shadow: inset 0px -1px 0px 0px #f5f7fb;
+    cursor: pointer;
+}
+#vmDeskSection3_table td {
+    padding-top: 9px;
+    padding-bottom: 3px;
+    font-size: 12px;
+    /* position: relative; */
+}
+#vmDeskSection3_table .productIdTitle {
+    background-color: black;
+    color: white!important;
+    position: relative;
+    width: 96px;
+    margin: 0 auto;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: white;
+    padding-top: 0px;
+    bottom: 7px;
+    left: -5px;
+}
+.resultsViewStructure3_td_image {
+    width: 96px;
+    height: 76px;
+    background-color: #bdbbb8;
+}
+.vmDeskSection3CounterStructure {
+    font-family: Assistant;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #000000;
+    position: absolute;
+    top: 15px;
+    /* position: relative; */
+    left: 23px;
+}
+.vmMainDeskContentWrapper .mainIconAnimation {
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    margin-top: -19px;
+    top: 50%;
+    left: 50%;
+    margin-left: -9px;
+    width: 40px;
+}
+.vmDeskSection{
+    display: none;
+}
+.vmDeskActiveSection{
+    display: block;
+}
+
+#vmDeskSection1 .productPopupWrapper.productPopupWrapperDisplay {
+    width: 100%;
+    position: relative;
+    top: 0px;
+    box-shadow: 0 0 0 !important;
+    /* padding: 0px; */
+}
+#vmDeskSection1 .productAttrTable {
+    width: 330px;
+}
+#vmDeskSection1 .productPopupStructure {
+    width: 100%;
+    position: relative;
+    color: black;
+    overflow-x: hidden;
+    overflow: hidden;
+}
+
+#vmDeskSection1 .productPopupMainButton.productPopupMainButtonCall {
+    visibility: hidden;
+}
+
+#vmDeskSection1 .productPopupMainButton.productPopupMainButtonWishList {
+    display: none;
+}
+
+#vmDeskSection1 .recommendedProductPopUpStructure {
+    
+}
+
+#vmDeskSection1 .productPopupCloseButton {
+    visibility: hidden;
+}
+.vmStructureAdvancedArrows {
+    position: absolute;
+    top: 351px;
+    z-index: 1111;
+    right: 20%;
+    background-color: white;
+    border: 1px solid #d6d6d6;
+    padding: 1px;
+    padding-top: 3px;
+    border-radius: 100px;
+    padding-left: 1px;
+    padding-bottom: 0px;
+    cursor: pointer;
+}
+.vmStructureAdvancedArrows {
+    position: absolute;
+    top: 351px;
+    z-index: 1111;
+    right: 20%;
+    background-color: white;
+    border: 1px solid #d6d6d6;
+    padding: 1px;
+    padding-top: 3px;
+    border-radius: 100px;
+    padding-left: 1px;
+    padding-bottom: 0px;
+}
+
+
+.vmDeskSection .recommendedProductPopUpItemStructure {
+    /* display: none; */
+}
+.vmStructure .productPopupCloseButtonTitle {
+    width: 40px;
+    height: 40px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.26);
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    right: -48px;
+    z-index: 100;
+    border-radius: 100px;
+    text-align: center;
+}
+.vmMainDeskHeaderStructureSeller {
+    width: 100%;
+    display: none;
+}
+
+.vmMainDeskHeaderStructureSeller .vmMainDeskHeaderNavBar {
+    width: 50%;
+    background-color: white;
+    border-bottom: 14px solid #eef1f6;
+}
+
+.vmMainDeskHeaderNavBar.vmMainDeskHeaderNavBarActive {
+    background-color: #627fe7;
+}
+.vmCallingPopupStructure {
+    position: absolute;
+    width: 500px;
+    top: 50%;
+    opacity: 0;
+    display: none;
+     -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+    padding-top: 39px;
+    margin-top: -200px;
+    left: 50%;
+    background-color: black;
+    margin-left: -250px;
+    /* border: 2px solid black; */
+    border-radius: 0px;
+    height: 131px;
+}.vmCallingPopupStructure {}.vmCallingPopupStructure {}
+
+.vmCallingPopupLogo img {
+    width: 60px;
+}
+
+.vmCallingPopupLogo {
+    text-align: center;
+}
+
+.vmCallingPopupName {
+    text-align: center;
+    font-size: 14px;
+}
+
+.vmCallingPopupDes {
+    text-align: center;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.56);
+}
+
+.vmCallingPopupAnswer {
+    text-transform: uppercase;
+    width: 397px;
+    color: white;
+    text-align: center;
+    padding-top: 7px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 7px;
+    /* margin-left: -2px; */
+    /* padding-right: 2px; */
+    margin-top: 34px;
+    float: left;
+    background-color: rgb(98, 127, 231);
+    border: 2px solid rgb(98, 127, 231);
+    border-right: 0px;
+}
+
+.vmCallingPopupDecline {
+    text-transform: uppercase;
+    width: 97px;
+    color: white;
+    text-align: center;
+    padding-top: 9px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 7px;
+    /* margin-left: -2px; */
+    /* padding-right: 2px; */
+    margin-top: 34px;
+    float: right;
+    background-color: rgba(0, 0, 0, 0.82);
+    border: 2px solid rgba(0, 0, 0, 0.82);
+    border-top: 0px;
+}

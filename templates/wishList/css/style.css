@@ -1,0 +1,457 @@
+.wishListStructure {
+    position: fixed;
+    top: 0px;
+    left: -100%;
+    display: none;
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+    background-color: #f5f7fb;
+    /* border-right: 2px solid #e4e4e4; */
+    -webkit-transition: all 1.6s ease;
+    -moz-transition: all 1.6s ease;
+    -ms-transition: all 1.6s ease;
+    -o-transition: all 1.6s ease;
+    transition: all 1.6s ease;
+    opacity: 0;
+}
+
+.wishListMainIconStructure {
+    position: absolute;
+    right: -48px;
+    width: 48px;
+    height: 54px;
+    top: 50%;
+    cursor: pointer;
+    /* display: none; */
+}
+.wishListContentStructure  .wishListIcon{
+    display: none;
+}
+.wishListContentStructure .productCardStructure .itemSection .cartIcon{
+        margin-top: 96px!important;
+}
+.wishListWrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-left: 0px;
+        -webkit-overflow-scrolling: touch;
+    /* margin-bottom: 140px; */
+}
+
+.wishListMainIcon {
+    width: 100%;
+    cursor: pointer;
+}
+.wishListSecHeaderStructure {
+    height: 56px;
+    background-color: white;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+
+.wishListSecHeaderLeftTitle {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    color: #000000;
+    float: left;
+    margin-top: 16px;
+    width: 25%;
+    cursor: pointer;
+    position: relative;
+    left: 150px;
+}
+
+.wishListSecHeaderCenterTitle {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: center;
+    color: #000000;
+    float: left;
+    margin-top: 13px;
+    width: 50%;
+    left: 10px;
+    position: relative;
+}
+.wishListSecHeaderStructure .mainHeaderStructure{
+        margin-top: 0px;
+        margin-left:  0px;
+        top: 7px;
+}
+.mainLogoWishListStructure{
+        width: 100%;
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 0;
+    text-align: center;
+    height: 80px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    overflow: hidden;
+}
+.wishListSecHeaderRightTitle {
+    width: 25%;
+    float: right;
+    margin-top: 13px;
+    position: absolute;
+    right: 25%;
+}
+.wishListSecHeaderRightTitle .checkOutButton{
+    float: right;
+    margin-right: 0px;
+    right: 0px;
+    display: none;
+}
+.wishListContentStructure {
+    margin-top: 80px;
+}
+
+.wishListSortTable {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.wishListSortTable .ui-state-default {
+    /* margin: 0 3px 3px 3px; */
+    padding: 0.4em;
+    /* padding-left: 1.5em; */
+    padding-left: 140px;
+    padding-right: 140px;
+    padding-top: 32px;
+    width: 0px;
+    opacity: 1;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 1.4em;
+    height: auto;
+    float: left;
+    position: relative;
+    background-color: transparent;
+    border: none;
+}
+  .wishListSortTable .itemBitcoinCostStructure{
+      /* position: absolute; */
+      /* margin-left: 5px; */
+      z-index: 6;
+      /* background-image: url(../../../assets/moveWindowIconB.png); */
+      background-size: 100% 100%;
+      /* width: 50px; */
+      /* height: 50px; */
+      background-position: 0;
+      margin-top: 0px;
+      /* background-image: url(../../assets/moveWindowIconW.png); */
+      /* right: 9px; */
+  }
+  .wishListContentResults .itemCardAttrStructure{
+      display: block;
+      opacity: 1;
+  }
+  .wishListContentResults {
+    top: 5px;
+    position: relative;
+    display: flex;
+    height: 750px;
+}
+.wishListContentResultsWrapper {
+    overflow: auto;
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* padding-right: 5%; */
+    padding-left: 5%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-bottom: 50px;
+}
+.wishListSecHeaderLeftTitle img {
+    position: absolute;
+    width: 14px;
+    top: 1px;
+    left: -16px;
+}
+.wishListMainIconTitle{
+        position: absolute;
+    margin-top: 8px;
+    width: 24px;
+    text-align: center;
+    margin-left: 8px;
+    color: white;
+    font-weight: 600;
+}
+.wishListDragElement {
+    width: 40px!important;
+    background-image: none!important;
+    /* background-color: #848484; */
+    cursor: move;
+    text-align: center;
+    text-align: center;
+    margin-top: -17px!important;
+    position: absolute;
+    left: -41px;
+    height: 50px!important;
+    top: 3px;
+}
+
+.wishListDragElement img {
+    width: 21px;
+    /* position: relative; */
+    /* margin: 0 auto; */
+    /* position: fixed; */
+    position: absolute;
+    top: 7px;
+    z-index: 0;
+}
+
+.wishListContentStructure .itemAlreadyWishListStructure {
+    display: none;
+}
+.wishListSecHeaderCenterIcon{
+        position: absolute;
+    width: 25px;
+    margin-left: -28px;
+    margin-top: -2px;
+}
+.wishListContentStructure .productCardStructure {
+    float: left;
+    position: absolute;
+    left: 0px;
+    width: 261px;
+}
+.wishListRemoveProductIcon {
+    position: absolute;
+    right: 13px;
+    top: 52px;
+    z-index: 10;
+    width: 24px;
+    cursor: pointer;
+    height: 24px;
+    opacity: 0;
+    background-color: #abbdff;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 100px;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    transform: scale(1);
+}
+.wishListContentStructure .productCardStructure .itemAlreadyCartStructure{
+    bottom: unset;
+    right: 15px;
+    top: 6px!important;
+}
+.wishListRemoveProductIcon:hover{
+    transform: scale(0.9);
+}
+.wishListRemoveProductIcon:active{
+    transform: scale(0.8);
+}
+.ui-state-default:hover .wishListRemoveProductIcon {
+    opacity: 1;
+}
+.wishListRemoveProductIcon
+ img {
+    width: 14px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.wishListContentStructure .itemAlreadyCartStructureActive {
+    visibility: visible!important;
+    opacity: 1!important;
+    transform: scale(1)!important;
+    /* margin-right: 31px; */
+}
+.wishListStructure .scaleButtonStructure {
+    float: right;
+    position: relative;
+    background-color: black;
+    margin-right: 20px;
+    width: 83px;
+    height: 36px;
+    border-radius: 100px;
+    margin-top: -2px;
+    cursor: pointer;
+    display: none;
+}
+
+.wishListStructure .scaleButton {
+    width: 23px;
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+.wishListStructure .scaleTitle {
+    position: absolute;
+    top: 0px;
+    color: white;
+    margin-left: 30px;
+    margin-top: 7px;
+    font-weight: 600;
+}
+.wishListMainBubbleStructure {
+    width: 223px;
+    text-align: left;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    left: -270px;
+    position: absolute;
+    font-size: 13px;
+    display: none;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.17);
+}
+
+.wishListMainBubbleSecTitle {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.wishListMainBubbleTitle {
+    font-weight: 600;
+}
+.wishListMainBubbleIcon {
+    position: absolute;
+    left: 7px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    color: #627fe7;
+    border-radius: 100px;
+    padding-left: 10px;
+    padding-right: 9px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-top: 6px;
+}
+.wishlistBackButtonStructure {
+    position: absolute;
+    top: 0px;
+    z-index: 99;
+    left: -52px;
+    width: 48px;
+    cursor: pointer;
+    height: 54px;
+    background-color: black;
+    border-top-left-radius: 36px;
+    border-bottom-left-radius: 36px;
+}
+
+.wishlistBackButton {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    position: relative;
+    top: 19px;
+    right: -8px;
+}
+.wishListContentResults .itemAlreadyCartStructure {
+    /* display: none; */
+    bottom: unset;
+    top: -10px;
+}
+.wishListContentResultsWrapper .productCardStructure  .itemFloatButton {
+    display: none;
+}
+@media screen and (max-width: 1020px){
+    .wishListStructure{
+        /* display: none!important; */
+        margin-top: 60px;
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+    }
+    .wishListContentStructure{
+            margin-top: 0px;
+            height: -webkit-fill-available;
+    }
+    .wishListMainIconStructure{
+        display: none;
+    }
+    .mainLogoWishListStructure{
+        display: none;
+    }
+    .mainHeaderStructure{
+        width: 100%!important;
+        top: 7px;
+    }
+    .wishListStructure .scaleButtonStructure{
+        display: none
+    }
+    .wishListStructure .mainHeaderFixed{
+        top: 81px;
+        position: absolute;
+        width: 100%;
+        z-index: 30;
+        top: 0px;
+        left: 0px;
+    }
+    .wishListSecHeaderRightTitle{
+        margin-right: 10px;
+        position: relative;
+        z-index: 1;
+    }
+    .wishListSecHeaderCenterTitle{
+            position: absolute;
+            width: 100%;
+            text-align: left;
+            z-index: 0;
+            margin-left: 51px;
+    }
+    .wishListSecHeaderLeftTitle{
+        display: none;
+    }
+    .wishListRemoveProductIcon{
+            display: block;
+            opacity: 1;
+            top: 19px;
+            right: 2px;
+    }
+    .wishListDragElement{
+        display: none!important;
+    }
+    .wishListContentResultsWrapper{
+        margin-top: 19px;
+        padding-bottom: 40px;
+    }
+    .wishListContentResults{
+        top: 49px;
+    }
+    .wishlistBackButtonStructure{
+        left: -48px;
+    }
+    .wishListWrapper .productCardStructure .itemSection .itemAttrStructure{
+            border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    }
+    .productCardStructure span.itemCostBitcoinIcon img{
+            margin-left: -57px;
+    margin-top: -2px;
+    width: 15px;
+    }
+}

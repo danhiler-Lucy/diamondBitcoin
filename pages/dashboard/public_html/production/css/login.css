@@ -1,0 +1,418 @@
+body {
+    background-color: white;
+    opacity: 1!important;
+}
+.loginContentWrapperLogo {
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+footer {
+    clear: both;
+}
+.mainPage {
+    /* margin-top: 150px; */
+    /* margin-top: 150px; */
+    padding-bottom: 70px;
+    display: flex;
+    border-top: 7px solid #6b9698;
+    /* box-shadow: inset 0px 3px 0px 0px #6c989b26; */
+}
+.mainContentWrapper{
+      width: 256px;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      /* margin-top: 21px; */
+      padding-bottom: 50px;
+}
+.loginStructure{
+        text-transform: capitalize;
+}
+.loginMainTitleStructure {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 208px;
+    text-align: center;
+}
+.capslockTitle{
+        width: 220px;
+    text-align: right;
+    font-size: 11px;
+    /* margin-top: -30px; */
+    position: relative;
+    /* display: inline-block; */
+    top: -17px;
+    height: 0px;
+    right: 7px;
+    color: #c5c5c5;
+    display: none;
+}
+.loginMainTitle {
+    font-size: 27px;
+    /* font-weight: 700; */
+}
+.loginSecTitle {
+    font-size: 15px;
+    margin-top: -2px;
+}
+.pageWrapperLoadingStructureHidden {
+    visibility: hidden;
+    opacity: 0;
+}
+.loginRightContent{
+    width: 50%;
+    float: right;
+    margin-top: 24px;
+    margin-bottom: 35px;
+        box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding-left: 100px;
+}
+.loginLeftContent{
+    width: 100%;
+    float: left;
+    /* margin-top: 23px; */
+    margin-bottom: 35px;
+    /* box-shadow: inset -2px 0px 0px 0px rgba(0, 0, 0, 0.03); */
+    overflow: hidden;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    /* padding-left: 50px; */
+}
+.loginLeftContentTitle {
+    font-size: 22px;
+    font-weight: 700;
+}
+.loginLeftContentSecTitle {
+    font-size: 15px;
+    margin-top: -2px;
+}
+.loginLeftContentInputStructure{
+        font-size: 15px;
+    margin-top: 22px;
+}
+.loginLeftContentInputWrapperTitle {
+    margin-top: 10px;
+    font-size: 13px;
+     opacity: 1;
+     -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.loginLeftContentInputWrapperInput{
+     opacity: 1;
+     -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.loginLeftContentInputWrapperInput input {
+    background-color: white;
+    width: 250px;
+    padding: 9px;
+    margin-top: 1px;
+    border: 0px;
+    border: 1px solid rgba(216, 216, 216, 0.43);
+    font-size: 15px;
+}
+.loginLeftContentInputWrapperInput input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.loginLeftContentForgetTitle {
+    width: 269px;
+    text-align: right;
+    font-size: 12px;
+    text-decoration: underline;
+    margin-top: 8px;
+    cursor: pointer;
+    /* display: none; */
+}
+.loginLeftContentContinueButton{
+    margin-top: 25px;
+    width: 130px;
+    height: 40px;
+    background-color: #6c9699;
+    color: white;
+    padding: 9px;
+    border-radius: 100px;
+    margin-left: 60px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+.alertPopupStructure {
+    position: absolute;
+    background-color: #000000;
+    color: #fff9f9;
+    font-size: 14px;
+    z-index: 1;
+    letter-spacing: 1px;
+    width: 227px;
+    border: 1px solid #d0d0d0;
+    border-top: 0px;
+    top: 204px;
+    text-align: center;
+    margin-left: -6px;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.registerInputRegister{
+     opacity: 1;
+     -webkit-transition: opacity .4s ease;
+    -moz-transition: opacity .4s ease;
+    -ms-transition: opacity .4s ease;
+    -o-transition: opacity .4s ease;
+    transition: opacity .4s ease;
+}
+.loginLeftContentWrapper {
+    width: 100%;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    margin-left: 0px;
+}
+
+.forgotPasswordContentWrapper {
+    float: right;
+    width: 50%;
+}
+.alertPopupTitle {
+    margin-bottom: 11px;
+    margin-top: 11px;
+}
+div#approvalPopupStructure {
+ position: fixed;
+ top: 50px;
+ z-index: 50;
+ left: 50%;
+ margin-left: -300px;
+ text-align: center;
+ display: none;
+ opacity: 0;
+ -webkit-transition: all .6s ease;
+ -moz-transition: all .6s ease;
+ -ms-transition: all .6s ease;
+ -o-transition: all .6s ease;
+ transition: all .6s ease;
+}
+.approvalPopupStructureBlur{
+        position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    z-index: 45;
+    background-color: #bdc7d6;
+    opacity: 0.6;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+div#approvalPopupStructure .comingSoonPopupTitle {
+        font-size: 20px;
+    /* text-align: left; */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    margin-top: 14px;
+}
+div#approvalPopupStructure .comingSoonPopupHeaderTitle{
+        letter-spacing: 2px;
+        padding-left: 20px;
+        text-transform: uppercase;
+}
+div#approvalPopupStructure .comingSoonPopupLine{
+    margin-top: 31px;
+    margin-bottom: 18px;
+}
+.forgotPassLeftContentBackButton {
+    margin-top: 32px;
+    width: 31px;
+    /* border: 2px solid black; */
+    color: black;
+    padding: 9px;
+    border-radius: 100px;
+    /* margin-left: 18px; */
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+
+.forgotPassLeftContentContinueButton {
+    margin-top: 31px;
+    width: 139px;
+    background-color: #fc115b;
+    color: white;
+    padding: 9px;
+    border-radius: 100px;
+    margin-left: 11px;
+    text-align: center;
+    cursor: pointer;
+    float: left;
+}
+.forgotPasswordContentSuccessTitle {
+    font-weight: 700;
+}
+
+.forgotPasswordContentSuccessStructure {
+    margin-top: 32px;
+    display: none;
+}
+.loginLeftContentRememberTitle {
+    /* float: left; */
+    font-size: 12px;
+    width: 150px;
+    position: relative;
+    top: -16px;
+    left: 0px;
+    /* margin: 0 auto; */
+}
+.loginLeftContentContinueButton img {
+    width: 118px;
+    position: absolute;
+    top: -19px;
+    left: 3px;
+}
+.loginLeftContentContinueButtonIcon{
+    display: none;
+}
+
+.loginContentWrapperLogo img {
+    width: 226px;
+    margin-bottom:  10px;
+    margin-left: -7px;
+}
+input#loginLeftContentRememberCheckbox {-webkit-appearance: checkbox;}
+.pageTitle {
+    position: absolute;
+    left: 0px;
+    top: 7px;
+    font-size: 16px;
+    background-color: #6b9698;
+    font-weight: 500;
+    padding-left:  10px;
+    color: white;
+    padding-right: 21px;
+    padding-bottom:  10px;
+    cursor: default;
+    padding-top: 5px;
+    border-bottom-right-radius:  20px;
+}
+@media screen and (max-width: 1020px){
+      .mainContentWrapper{
+        width:100%!important;
+        margin-top: 0px;
+        /* overflow: hidden; */
+      }
+      .mainPage {
+          margin-top: 0px;
+      }
+      .loginLeftContent{
+              width: 100%;
+              margin-top: 58px;
+              text-align: center;
+              padding-left: 0px;
+              margin-bottom: 10px;
+      }
+      .loginRightContent{
+          width: 100%;
+          margin-top: 34px;
+          text-align: center;
+          padding-left: 0px;
+          margin-bottom: 19px;
+      }
+      .loginLeftContentContinueButton{
+              margin-left: 0px;
+              position: relative;
+              margin: 0 auto;
+              margin-top: 9px;
+      }
+      .loginLeftContentInputWrapper{
+              width: 250px;
+              position: relative;
+              margin: 0 auto;
+              text-align: left;
+      }
+      .loginLeftContentInputWrapperTitle{
+              margin-left: 6px;
+              margin-bottom: 4px;
+              width: 100px;
+              text-align: left;
+      }
+      .loginLeftContentForgetTitle{
+          position: relative;
+          margin: 0 auto;
+          margin-top: 7px;
+          /* display: none; */
+          font-size: 12px;
+          right: -7px;
+      }
+      div#approvalPopupStructure{
+              width: 100%;
+              margin-left: 0px;
+              /* left: 0px; */
+              left: 50%;
+              transform: translateX(-50%);
+              max-width: 600px;
+      }
+     div#approvalPopupStructure .comingSoonPopupDesc{
+              padding-left: 20px;
+    padding-right: 20px;
+    font-size: 14px;
+      }
+     div#approvalPopupStructure .comingSoonPopupTitle{
+          font-size: 20px;
+      }
+     div#approvalPopupStructure .comingSoonPopupHeaderTitle{
+          text-align: left;
+              padding-left: 20px;
+      }
+      .loginLeftContentWrapper{
+          width: 200%;
+      }
+      .forgotPasswordContentWrapper{
+          /* display: none; */
+      }
+      .loginContentWrapper {
+            float: left;
+            width: 50%;
+        }
+        .forgotPassLeftContentContinueButton{
+            float: none;
+            position: relative;
+            margin: auto;
+            top: 14px;
+        }
+        .forgotPassLeftContentBackButton{
+                position: relative;
+                left: -127px;
+                top: 33px;
+                float: none;
+                height: 0px;
+                margin-top:  0px;
+                margin: auto;
+        }
+        .loginLeftContentRememberTitle{
+            margin: 0 auto;
+            left: -62px;
+        }
+}
+

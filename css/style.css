@@ -1,0 +1,272 @@
+
+html {
+    -webkit-tap-highlight-color: rgba(201, 224, 253, 0);
+}
+body{
+     color: black;
+     background-image: url(../assets/icons/background-shapes.png);
+     height: 483px;
+     background-size: 149%;
+     background-position-y: top;
+     background-repeat: no-repeat;
+     margin:0px;
+     padding: 0px;
+     background-color: #dccca30f;
+     font-family: 'Assistant', sans-serif;
+     cursor: default;
+     -webkit-user-select: none; /* Chrome/Safari */
+     -moz-user-select: none; /* Firefox */
+     -ms-user-select: none; /* IE10+ */
+/* Rules below not implemented in browsers yet */
+     -o-user-select: none;
+     user-select: none;
+     -webkit-transition: all .6s ease;
+     -moz-transition: all .6s ease;
+     -ms-transition: all .6s ease;
+     -o-transition: all .6s ease;
+     transition: all .6s ease;
+     -webkit-overflow-scrolling: touch;
+}
+
+img[src=""] {
+   display: none;
+}
+.mainIconAnimation{
+    width: 25px;
+}
+.mainIconAnimation img{
+    width: 100%;
+    -webkit-animation: rotate 2.5s .0s ease infinite;
+    animation: rotate 2.5s .0s ease infinite;
+}
+.mainIconNoAnimation{
+    width: 25px;
+}
+.mainIconNoAnimation img{
+    width: 100%;
+}
+input{
+    /* Remove First */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+input:focus {
+    outline:none;
+}
+.overflowHidden{
+    overflow: hidden;
+}
+.overflowAuto{
+    overflow: auto;
+}
+.boldTitle600{
+    font-weight: 600;
+}
+.boldTitle700{
+    font-weight: 700;
+}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+.displayBlock{
+    display: block!important;
+}
+.displayNone{
+    display: none!important;
+}
+.zIndex59{
+    z-index: 59;
+}
+.zIndex60{
+    z-index: 60;
+}
+.noProductsResultsBoxStructure{
+        width: 50%;
+        text-align: center;
+        margin: 0 auto;
+        height: 78px;
+        padding-top: 64px;
+        background-color: white;
+        margin-bottom: 40px;
+        top: 70px;
+        position: relative;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
+        font-weight: bold;
+        line-height: 1.25;
+        letter-spacing: 0.2px;
+}
+.mainWrapper{
+    opacity:0;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.timeline-item {
+    background: #fff;
+    border: 1px solid;
+    border-color: #e5e6e9 #dfe0e4 #d0d1d5;
+    border-radius: 3px;
+    padding: 12px;
+
+    margin: 0 auto;
+    max-width: 472px;
+    min-height: 200px;
+}
+#recentlyViewedResultsTable_filter input::placeholder,.searchInuptView3Wrapper input::placeholder,.mainFilter1gridHoverBoxStructure input::placeholder{
+    font-size: 10px;
+    font-weight: 500;
+    color:#a6adb8;
+}
+.cursorPointer{
+    cursor: pointer;
+}
+.underlineHover:hover{
+        text-decoration: underline;
+}
+@keyframes placeHolderShimmer{
+    0%{
+        background-position: -468px 0
+    }
+    100%{
+        background-position: 468px 0
+    }
+}
+
+.animated-background-image-product {
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-name: placeHolderShimmer;
+    animation-timing-function: linear;
+    background: #f6f7f8;
+    background: linear-gradient(to right, #dee0e4 8%,#d2d2d4 18%, #d5d7d8 33%);
+    background-size: 800px 104px;
+    height: 96px;
+    position: relative;
+}
+
+
+@-webkit-keyframes rotate{ to{-webkit-transform: rotate(360deg); } }
+@keyframes         rotate{ to{        transform: rotate(360deg); } }
+
+.mobileElm{
+       display: none;
+   }
+
+@media screen and (max-width: 1357px){
+        .mainHeaderStructure {
+            width: 900px;
+        }
+        .mainContentWrapper {
+            width: 900px!important;
+        }
+        .footerStructure .footerWrapper {
+            width: 900px;
+        }
+        .secFooterStructure  .secFooterWrapper{
+            width: 900px;
+        }
+  }
+
+
+@media screen and (max-width: 1020px){
+   /* .mainWrapper{
+        display: none;
+    }
+    .bellowMinScreenStructure,.bellowMinScreenStructure div{
+        display: block!important;
+    }
+    .comingSoonPopupStructure,.comingSoonPopupStructure div{
+        display: block!important;
+    }*/
+   .desktopElm{
+       display: none!important;
+   }
+   .mobileElm{
+       display: block;
+       /* float: unset!important; */
+       /* position: absolute!important; */
+       /* width: 100%; */
+   }
+}
+
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}
+::-webkit-scrollbar-track {
+    background-color: #eaeaea;
+    border-left: 1px solid #ccc;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #afacad;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #aaa;
+}
+
+
+
+/* CHECKBOX */
+[name="lucySlideCheckbox"]:not(:checked),
+[name="lucySlideCheckbox"]:checked {
+  position: absolute;
+  /* top: 10px; */
+}
+
+[name="lucySlideCheckbox"]:not(:checked) + label,
+[name="lucySlideCheckbox"]:checked + label {
+  position: relative;
+  /* padding-left: 4em; */
+  /* padding-top: .25em; */
+  cursor: pointer;
+  top: -2px;
+  left: 11px;
+  z-index: 2;
+}
+
+[name="lucySlideCheckbox"]:not(:checked) + label:before,
+[name="lucySlideCheckbox"]:checked + label:before,
+[name="lucySlideCheckbox"]:not(:checked) + label:after,
+[name="lucySlideCheckbox"]:checked + label:after {
+  content: '';
+  position: absolute;
+  height: 17px;
+  transition: all .5s ease;
+}
+
+[name="lucySlideCheckbox"]:not(:checked) + label:before,
+[name="lucySlideCheckbox"]:checked + label:before {
+  left: 0;
+  top: 0;
+  width: 39px;
+  border: 2px solid rgb(234,239,243);
+  background: rgb(234,239,243);
+  border-radius: 1.1em;
+  z-index: -1;
+}
+[name="lucySlideCheckbox"]:not(:checked) + label:after,
+[name="lucySlideCheckbox"]:checked + label:after {
+  left: .15em;
+  top: .125em;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 17px;
+}
+  [name="lucySlideCheckbox"]:checked + label:after {
+    left: 1.49em;
+  }
+  [name="lucySlideCheckbox"]:checked + label:before {
+    background-color: #637582;
+    border-color: #637582;
+  }
+
+
+@media screen and (max-width: 1020px){
+  
+}

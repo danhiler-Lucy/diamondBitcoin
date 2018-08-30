@@ -1,0 +1,105 @@
+.mainLogoStructure{
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-shadow: 0 0 0;
+    text-align: center;
+        height: 80px;
+          -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    overflow: hidden;
+}
+.mainLogoMinStructure{
+        height: 24px!important;
+}
+.mainLogoStructure .mainTitle{
+    padding-top: 20px;
+    font-size: 17px;
+    letter-spacing: 16px;
+    font-weight: 500;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+div#mainLogoTitle img {
+    width: 190px;
+    position: relative;
+    top: -4px;
+}
+.mainLogoStructureMainTitle{
+    font-size: 12px!important;
+    font-weight: 200!important;
+    letter-spacing: 10.9px!important;
+    padding-top:4px!important;
+}
+.mainLogoStructure .secTitle{
+    padding-top: 3px;
+    font-size: 12px;
+    letter-spacing: 1.4px;
+    margin-left: -12px;
+    font-weight: 200;
+    padding-bottom: 17px;
+    transform: scale(1);
+    opacity: 1;
+     -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.mainLogoStructureSecTitleMin{
+  
+}
+.mainLogoStructure .mainBeta{
+        font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    position: absolute;
+    top: 5px;
+    right: 20px;
+}
+.mobileHeaderFixed .mainTitle {
+    /* padding-top: 20px; */
+    font-size: 17px;
+    letter-spacing: 16px;
+    font-weight: 200;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    text-align: center;
+    color: white;
+    font-size: 11px;
+    /* font-weight: normal; */
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 11.6px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.mobileHeaderFixed {
+    height: 25px;
+    background-color: #161616;
+    padding-top: 6px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: fixed;
+    width: 100%;
+    z-index: 60;
+}
+
+@media screen and (max-width: 1020px){
+.mobileHeaderFixed{
+    top:0px;
+}
+
+}

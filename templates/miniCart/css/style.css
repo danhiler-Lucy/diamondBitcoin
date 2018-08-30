@@ -1,0 +1,452 @@
+.miniCartExpandInfoWrapper{
+    display: inline-block;
+    width: 100%;
+}
+.miniCartStructure{
+    position: fixed;
+    bottom: -96px;
+    right: 15%;
+    box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 6px;
+    z-index: 17;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    opacity: 0;
+    /* display: none; */
+}
+.miniCartWrapper{
+        width: 304px;
+        display: inline-grid;
+}
+.miniCartTotalItemsButton {
+    width: 120px;
+    transform: scale(1);
+    height: 36px;
+    border-radius: 100px;
+    /* background-color: #3F51B5; */
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    padding-top: 8px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+    color: #000000;
+    color: black;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.miniCartHeader{
+        height: 52px;
+        background-color: #ffffff;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+        position: relative;
+        cursor: pointer;
+}
+.miniCartIcons{
+    padding: 15px;
+}
+.miniCartArrowsIcon{
+    margin-top: 6px;
+    float: left;
+}
+.miniCartMainIcon{
+        margin-left: 3px;
+    float: left;
+    margin-top: 2px;
+}
+.miniCartMainTitle{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #000000;
+    margin-top: 6px;
+    margin-left: 5px;
+    display: inline-block;
+    float: left;
+}
+.miniCartMainTitleCount{
+        font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    color: #000000;
+    margin-top: 6px;
+    margin-left: 5px;
+    display: inline-block;
+    float: left;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    transform: scale(1);
+}
+.miniCartTotalButton{
+        width: 120px;
+        transform: scale(1);
+    height: 36px;
+    border-radius: 100px;
+    background-color: #3F51B5;
+    float: right;
+    position: absolute;
+    top: 10px;
+    right: 16px;
+    padding-top: 8px;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+.miniCartTotalButtonAdded{
+    transform: scale(1.1);
+}
+.miniCartMainTitleCountAdded{
+    transform: scale(1.2);
+}
+.miniCartStructure .itemStructure{
+        width: 100%;
+        height: 81px;
+        clear: both;
+        padding-top: 8px;
+        padding-left: 0px;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding-right: 0px;
+        border-bottom: 2px solid rgba(234, 234, 234, 0.4);
+        cursor: pointer;
+        position: relative;
+}
+.miniCartStructure .itemStructureRemoveIcon {
+        position: absolute;
+        right: 1px;
+        top: 6px;
+        padding-top: 7px;
+        padding-right: 5px;
+        padding-left: 15px;
+        padding-bottom: 8px;
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+        opacity: 1;
+}
+.miniCartStructure .itemStructure:hover .itemStructureRemoveIcon{
+    opacity: 0.5;
+}
+.miniCartStructure  .itemStructure .itemImage{
+    width: 76px;
+    height: 100%;
+    position: relative;
+    float: left;
+}
+.miniCartStructure .itemStructure .itemImage img{
+     width: 76px;
+     height: auto;
+     border-radius: 2px;
+     background-image: radial-gradient(circle at 50% 50%, #ffffff, #b1b5b9);
+     margin-left: 7px;
+}
+.miniCartStructure  .itemStructure  .itemStructureTd_2{
+   float: left;
+    padding-left: 17px;
+    width: 150px;
+    padding-top: 5px;
+}
+.miniCartStructure  .itemStructureTdInfo1{
+    float: left;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+.miniCartStructure  .itemStructureTdInfo2{
+     clear: both;
+     font-size: 14px;
+     /* font-weight: 600; */
+     line-height: 1.5;
+     /* margin-left: 31px; */
+     margin-top: 0px;
+     font-size: 13px;
+     line-height: 1.29;
+     letter-spacing: 0.2px;
+}
+.miniCartStructure  .itemStructureTdInfo3{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.2px;
+    float: left;
+    display: none;
+}
+.miniCartStructure  .itemStructureTdInfo4{
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.2px;
+    float: left;
+    /* display: none; */
+    position: absolute;
+    right: 11px;
+}
+.miniCartStructure  .itemStructureTdInfo5{
+        /* float: right; */
+        width: 85px;
+        text-align: left;
+        margin-right: 20px;
+        font-weight: 700;
+        margin-top: 2px;
+        font-size: 13px;
+        position: absolute;
+        bottom: 13px;
+        left: 95px;
+}
+.miniCartExpandInfoStructure{
+        background-color: #ffffff;
+        height: 0px;
+        overflow: auto;
+        -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+        -webkit-overflow-scrolling: touch;
+}
+.miniCartExpandInfoStructureExpanded{
+    height: inherit;
+}
+.miniCartStructure .itemStructureRemoveIcon img {
+    width: 14px;
+}
+.footerCartStructure {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    padding-bottom: 13px;
+    /* border-top: 2px solid #f7f7f7; */
+}
+
+.footerCartTitle {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #000000;
+    float: left;
+    margin-left: 25px;
+    margin-top: 18px;
+}
+
+.footerCartTotalCount {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    color: #000000;
+    float: right;
+    margin-top: 18px;
+    margin-right: 25px;
+}
+
+.footerCartButtonCheckout {
+    float: right;
+    margin-top: 13px;
+    /* margin-right: 25px; */
+    border-radius: 100px;
+    background-color: #000000;
+    clear: both;
+    width: 90%;
+    text-align: center;
+    margin-right: 5%;
+    font-size: 12px;
+    /* font-weight: bold; */
+    padding-top: 7px;
+    letter-spacing: 0.5px;
+    padding-bottom: 8px;
+    text-align: center;
+    cursor: pointer;
+    color: #ffffff;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    transform: scale(1);
+}
+.footerCartButtonCheckout:hover {
+        transform: scale(1.02);
+}
+
+.miniCartMainBubbleStructure {
+    width: 211px;
+    top: 0px;
+    /* padding-top: 120px; */
+    text-align: left;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    left: 22px;
+    position: absolute;
+    font-size: 13px;
+    display: none;
+    letter-spacing: 1px;
+    background-color: black;
+    color: white;
+    opacity: 0;
+    padding-left: 49px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 100px;
+    /* border-bottom-right-radius: 100px; */
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.17);
+}
+
+.miniCartMainBubbleStructureActive{
+    top:-60px;
+                    opacity:1;
+}
+.miniCartMainBubbleSecTitle {
+    font-weight: 400;
+    font-size: 12px;
+    opacity: 0.9;
+}
+
+.miniCartMainBubbleTitle {
+    font-weight: 600;
+}
+.miniCartMainBubbleIcon {
+    position: absolute;
+    left: 12px;
+    font-size: 12px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 100px;
+    padding-left: 10px;
+    padding-right: 9px;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+}
+.miniCartStructure .itemStructureTdInfo4 .itemCostBitcoinIcon img {
+    width: 14px;
+    padding-right: 2px;
+}
+
+.miniCartStructure .itemStructureTdInfo4 .itemCostBitcoinIcon .itemCostValue {}
+
+.miniCartStructure .itemStructureTdInfo4 .itemCostValue {
+    font-weight: 600;
+}
+@media screen and (max-width: 1357px){
+    .miniCartStructure {
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 1020px){
+    .miniCartStructure{
+            opacity: 1;
+            width: 100%;
+            right: 0px;
+            z-index: 21;
+            box-shadow: 0 0px 0px 0px rgb(0, 0, 0);
+            border-top: 2px solid rgba(0, 0, 0, 0.08);
+            /* display: none; */
+            bottom: -160px;
+            /* top: 0px; */
+            /* border-bottom: 20px solid white; */
+            margin-bottom: -5px;
+    }
+    .miniCartWrapper{
+        width: 100%;
+    }
+    .miniCartHeader{
+            border-radius: 0px;
+    }
+    .miniCartStructure  .itemStructureTdInfo5{
+        font-size: 17px;
+        position: relative;
+        right: 0px;
+        top: 39px;
+    }
+    .miniCartStructure  .itemStructureTdInfo1{
+        font-size: 15px;
+    }
+    .miniCartStructure  .itemStructureTdInfo2{
+        font-size: 15px;
+    }
+    .miniCartTotalItemsButton{
+        font-size: 15px;
+    }
+    .footerCartTotalCount{
+            font-size: 20px;
+    }
+    .footerCartTitle{
+        font-size: 20px;
+    }
+    .footerCartButtonCheckout{
+        font-size: 16px;
+    }
+    .secFooterStructure{
+        /* padding-bottom: 70px; */
+    }
+    .miniCartStructureBlur {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(189, 199, 214, 0.6);
+    z-index: 20;
+    display: none;
+    opacity: 0;
+    -webkit-transition: all .6s ease;
+        -moz-transition: all .6s ease;
+        -ms-transition: all .6s ease;
+        -o-transition: all .6s ease;
+        transition: all .6s ease;
+        visibility: hidden;
+}
+.miniCartStructure .itemStructureRemoveIcon{
+        right: 9px;
+}
+.miniCartMainBubbleStructure{
+    left: 50%;
+    margin-left: -130px;
+    position: fixed;
+    top: 0%!important;
+}
+.miniCartMainBubbleStructureActive{
+    top: 94px!important;
+}
+.miniCartStructure .itemStructure .itemImage img {
+        width: 135px;
+    height: 114px;
+}
+.miniCartStructure .itemStructure .itemImage {
+    width: 135px;
+}
+.miniCartStructure .itemStructure {
+    height: 121px;
+}
+}

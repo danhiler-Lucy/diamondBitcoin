@@ -1,0 +1,128 @@
+div#comingSoonPopupStructure {
+    position: fixed;
+    z-index: 50;
+    top: 50px;
+    width: 100%;
+    opacity: 0;
+    display: none;
+    text-align: center;
+     -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+
+.comingSoonPopupWrapper {
+    background-color: white;
+    width: 600px;
+    position: relative;
+    display: inline-block;
+    height: 250px;
+    box-shadow: 0px 5px 0px 0px rgba(0, 0, 0, 0.68);
+}
+
+.comingSoonPopupTitle {
+    font-size: 36px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: center;
+    padding-top: 41px;
+    color: #000000;
+}
+
+.comingSoonPopupHeaderStructure {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+div#comingSoonPopupStructureBlur {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    z-index: 45;
+    background-color: #bdc7d6;
+    opacity: 0.6;
+    opacity: 0;
+    display: none;
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+}
+
+.comingSoonPopupHeaderTitle {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 10.9px;
+    text-align: center;
+    color: #ffffff;
+    padding-top: 17px;
+}
+
+.comingSoonPopupLine {
+    width: 250px;
+    background-color: rgba(69, 71, 74, 0.12);
+    height: 2px;
+    margin: 0 auto;
+    margin-top: 32px;
+}
+
+.comingSoonPopupDesc {
+    font-size: 16px;
+    letter-spacing: 0.3px;
+    color: #000000;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.comingSoonPopupDescMail {
+}
+.comingSoonPopupHeaderCloseButton {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    color: black;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: white;
+    height: 50px;
+    width: 60px;
+    padding-top: 18px;
+    cursor: pointer;
+}
+.bellowMinScreenStructure{
+      position: fixed;
+    z-index: 50;
+    top: 50px;
+    width: 100%;
+    text-align: center;
+     -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
+    display: none;
+}
+.bellowMinScreenStructure .comingSoonPopupWrapper {
+    width:100%;
+     padding-bottom: 20px;
+     height: inherit;
+}
+.bellowMinScreenStructure .comingSoonPopupTitle{
+        font-size: 20px;
+}
+@media screen and (max-width: 1020px){
+
+    .comingSoonPopupWrapper{
+        width: 100%;
+        height: auto;
+        padding-bottom: 20px;
+    }
+}
