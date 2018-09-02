@@ -56,7 +56,11 @@
                                 </div>
                             </div>
                     </div>
-		</div>
+        </div>
+        
+
+
+        
 		<div class="buttonDiamondWrapper">
 			<div class="buttonDiamond buttonDiamondWhite" onclick="activeMainTool.redirectPageWithEx(1,'?colorType=0')">
 				WHITE

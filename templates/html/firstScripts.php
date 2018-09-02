@@ -24,6 +24,7 @@
     <script src="../js/clipboard.js"></script>
     <script src="https://bitpay.com/bitpay.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.2.0/bootstrap-slider.min.js"></script>
+    
 
     
     

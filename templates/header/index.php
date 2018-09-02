@@ -116,6 +116,12 @@
                 <div class="checkOutButton"  onclick="activeMainTool.redirectPage(6)">
                     CHECKOUT
                 </div>
+                <div class="bitpayLogo"> 
+
+                    <div class="lockWrapper"><img src="../assets/lock.png"></div>
+                    <div><img src="../assets/bitpay.png"></div>
+
+                </div>
             </div>
 <div id="mobileHeaderWrapper" class="mobileHeaderWrapper mobileElm">
     <div class="mobileHeaderStructure ">

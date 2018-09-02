@@ -7,6 +7,7 @@
                     <link rel="stylesheet" href="../templates/productCard/css/style.css" />
                     <link rel="stylesheet" href="../templates/productCard/css/style.css" />
                     <link rel="stylesheet" type="text/css" href="../css/dataTables/style.css">
+                
 
 </head>
 <body>
@@ -59,6 +60,9 @@
                                         <!--<div class="mainfilterSearchSaveButton"  onclick="activeMainTool.comingSoonPopup()">
                                                     SAVE SEARCH
                                             </div>-->
+                                            <div class="poweredByLabel" >
+                                                    Powered by <img src="http://www.motiganz.com/wp-content/uploads/2017/04/cropped-motigaz-1.png" />
+                                            </div>
                                             <div class="mainfilterSearchClearButton"  onclick="activeMainPage.clearAllFilters()">
                                                     CLEAR
                                             </div>
@@ -286,16 +290,16 @@
 Color:
 </div>
 <div class="newFilterBox">
-<input
+<input class='newFilterStep'
 	type="text"
-	name="color"
+	name="Color"
 	data-provide="slider"
 	data-slider-ticks="[1, 2, 3,4,5,6,7,8,9,10,11]"
 	data-slider-ticks-labels='["D", "E", "F","G", "H", "I","J","K","L","M","N"]'
 	data-slider-min="1"
 	data-slider-max="9"
 	data-slider-step="1"
-	data-slider-value="3"
+	data-slider-value="1"
 	data-slider-tooltip="hide"
         data-slider-range="true"
 >
@@ -306,16 +310,16 @@ Color:
 Cut:
 </div>
 <div class="newFilterBox">
-<input
+<input class='newFilterStep'
 	type="text"
 	name="Cut"
 	data-provide="slider"
 	data-slider-ticks="[1, 2, 3,4]"
-	data-slider-ticks-labels='["EXCELLENT", "VERY GOOD", "GOOD","FAIR"]'
+	data-slider-ticks-labels='["F",  "G","VG","EX"]'
 	data-slider-min="1"
 	data-slider-max="4"
 	data-slider-step="1"
-	data-slider-value="3"
+	data-slider-value="1"
 	data-slider-tooltip="hide"
         data-slider-range="true"
 >
@@ -326,7 +330,7 @@ Cut:
 Clarity:
 </div>
 <div class="newFilterBox">
-<input
+<input class='newFilterStep'
 	type="text"
 	name="Clarity"
 	data-provide="slider"
@@ -335,7 +339,7 @@ Clarity:
 	data-slider-min="1"
 	data-slider-max="7"
 	data-slider-step="1"
-	data-slider-value="3"
+	data-slider-value="1"
 	data-slider-tooltip="hide"
         data-slider-range="true"
 >
@@ -347,24 +351,24 @@ Price:
 </div>
 <div class="newFilterBox flexCol">
         <div class="priceRange">
-<input
+<input id="newFilterPrice"
 	type="text"
 	name="Price"
 	data-provide="slider"
 	
 
-	data-slider-min="1"
-	data-slider-max="10000"
+	data-slider-min="100"
+	data-slider-max="50000"
 	data-slider-step="1"
-	data-slider-value="1000"
+	data-slider-value="100"
 	data-slider-tooltip="hide"
         data-slider-range="true"
 >
 </div>
 
 <div class="priceInputBoxes">
-        <div class="priceInput"><input type="text"></div>
-        <div><input type="text"></div>
+        <div class="priceInput"><input type="text" value="$100" id="newMinPrice"></div>
+        <div><input type="text" value="$500000" id="newMaxPrice"></div>
 </div>
 </div>
 </div>
@@ -374,16 +378,16 @@ Carat:
 </div>
 <div class="newFilterBox flexCol">
         <div class="priceRange">
-<input
+<input  id="newFilterCarat"
 	type="text"
 	name="Carat"
 	data-provide="slider"
 	
 
 	data-slider-min="0"
-	data-slider-max="2"
-	data-slider-step="1"
-	data-slider-value="1000"
+	data-slider-max="9"
+	data-slider-step="0.01"
+	data-slider-value="0"
 	data-slider-tooltip="hide"
         data-slider-range="true"
 >
@@ -391,20 +395,21 @@ Carat:
 
 
 <div class="priceInputBoxes">
-        <div class="priceInput"><input type="text"></div>
-        <div><input type="text"></div>
+        <div class="priceInput"> <input type="text" id="newMinCarat" value="0 ct"></div>
+        <div><input type="text" id="newMaxCarat" value="9 ct"></div
+</div>
 </div>
 </div>
 </div>
 
-<div class="newFilterWrapper">
+<div class="newFilterWrapper ">
 <div class="newFilterLabel">
 Report:
 </div>
 <div class="newFilterBox report">
-<div><input type="button" value="GIA" /> </div>
-<div><input type="button" value="IGI" /> </div>
-<div><input type="button" value="HRD" /> </div>
+<div>GIA</div>
+<div>IGI</div>
+<div>HRD</div>
 
 
 </div>
@@ -1193,7 +1198,7 @@ Report:
                                                             </div>
                                                          </div>
                                                     </div>-->
-                                               <div class="filtersRowStructure togglersRow">
+                                               <div class="filtersRowStructure togglersRow" style="display:none">
                                                         <!--<div class="leftSection" hidden>
                                                         <div class="mobileMainFilterButtonLast filterAvailabilityFilterInputStructure filterAttr_1 mainFilterButton1gridLast availabilityFilterInputStructure mainFilterButton1gridRangeNumbers" name="availability" >
                                                                 <div class='availabilityFilterInputWrapper toogleButtonTitle' onclick="activeMainPage.ChangeCheckBoxInput('availabilityFilterInput')">
@@ -1255,7 +1260,7 @@ Report:
                                            <div class="mainFilterSeparateLine">
 
                                             </div>
-                                            <div class="mainFilterAdvancedWrapper">
+                                            <div class="mainFilterAdvancedWrapper" style="display:none">
                                             <div class="mainFilterAdvancedButton">
                                                         <img src="../assets/icons/arrowDown.png"/>
                                             </div>

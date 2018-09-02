@@ -12,13 +12,121 @@ function mainPage() {
         open: false,
         inactive: false
     };
+    this.newFilters = {}
+    this.newFiltersMapping = {
+        Color: { 1: 'D', 2: 'E', 3: 'F', 4: 'G', 5: 'H', 6: 'I', 7: 'J', 8: 'K', 9: 'L', 10: 'M', 11: 'N' },
+        Clarity: { 1: 'IF', 2: 'VVS1', 3: 'VVS2', 4: 'VS1', 5: 'VS2', 6: 'SI1', 7: 'SI2' },
+        Cut: { 1: 'F', 2: 'G', 3: 'VG', 4: 'EX' }
+    }
+    this.newModelchosen = ""
 }
 
 var activeMainPage = new mainPage();
 
+//----------------- new filters implementation
+$('.newFilterStep,#newFilterCarat,#newFilterPrice').on('slideStop', (e) => {
+    activeMainPage.newFiltersUpdated()
+})
+
+$('#newMinPrice,#newMaxPrice,#newMinCarat,#newMaxCarat').on('focusout', (e) => {//manual input update
+    const newValue = e.target.value
+    const attName = e.target.getAttribute('ID')
+    // $('#'+attName).val("$" + newValue)
+
+    switch (attName) {
+        case 'newMinPrice':
+            activeMainPage.newFilters.fromPpc = newValue;
+            break
+        case 'newMaxPrice':
+            activeMainPage.newFilters.toPpc = newValue;
+            break
+        case 'newMinCarat':
+            activeMainPage.newFilters.fromCarat = newValue;
+            break
+        case 'newMaxPrice':
+            activeMainPage.newFilters.toCarat = newValue;
+            break
+        default:
+            break
+        // $('#newFilterCarat').attr('data-slider-value')=newValue
+
+    }
+
+    activeMainPage.newFiltersUpdated()
+})
+$(".mainFilterButtonShapeImageStructure").on('click', (e) => {
+    let modelsArr = (activeMainPage.newFilters.model) ? activeMainPage.newFilters.model.split(',') : []
+
+    let modelClicked = e.currentTarget.getAttribute('type')
+    const index = modelsArr.findIndex((model) => model === modelClicked)
+    if (index !== -1) {
+        modelsArr.splice(index, 1)
+    } else {
+        modelsArr.push(modelClicked)
+    }
+
+    activeMainPage.newFilters.model = modelsArr.join(',')
+    activeMainPage.newFiltersUpdated()
+})
+document.querySelector('.report').addEventListener('click', (e) => {
+    $('.report div').removeClass('selected')
+    e.target.classList.add('selected')
+    activeMainPage.newFilters.lab = e.target.innerHTML;
+
+    activeMainPage.newFiltersUpdated()
+
+})
+$('.newFilterStep').on('slide', (e) => {
+    let queryStr = "";
+    for (let i = e.value[0]; i <= e.value[1]; i++) {
+        queryStr += activeMainPage.newFiltersMapping[e.target.name][i] + ","
+    }
+    queryStr = queryStr.slice(0, -1)//remove last comma
+    activeMainPage.newFilters[e.target.name] = queryStr
+
+})
+
+$('#newFilterCarat').on('slide', (e) => {
+    $('#newMinCarat').val(e.value[0] + " ct")
+    $('#newMaxCarat').val(e.value[1] + " ct")
+    activeMainPage.newFilters.fromCarat = e.value[0];
+    activeMainPage.newFilters.toCarat = e.value[1];
+
+})
+$('#newFilterPrice').on('slide', (e) => {
+    $('#newMinPrice').val("$" + e.value[0])
+    $('#newMaxPrice').val("$" + e.value[1])
+
+    activeMainPage.newFilters.fromPpc = e.value[0];
+    activeMainPage.newFilters.toPpc = e.value[1];
+
+})
+$('#newMinPrice,#newMaxPrice').on('keyUp', (e) => {
+    console.log(e.target.value)
+})
+
+activeMainPage.newFiltersUpdated = function () {
+    //building query
+    let query = ""
+    for (let attr in activeMainPage.newFilters) {
+        if (activeMainPage.newFilters[attr])
+            query += attr + "=" + activeMainPage.newFilters[attr] + "&"
+    }
+    query = query.slice(0, -1)//remove last comma
+
+    activeProductManager.getFilterProducts(query)
+}
+//-------------------------
+
+
 activeMainPage.getData = function () {
     //activeProductManager.getProducts();
 }
+
+activeMainPage.getData = function () {
+    //activeProductManager.getProducts();
+}
+
 
 activeMainPage.checkIfMobile = function () {
     if (activeMainTool.viewType === 1) {
@@ -374,7 +482,7 @@ activeMainPage.filterByUrlQuery = function () {
         activeMainPage.setFilter15();
         activeMainPage.openProductPopupById();
         $('.mainFilterAdvancedButton').click();
-    } else if (smartSearchValues!==null) {
+    } else if (smartSearchValues !== null) {
         $('#generalSearchInput').val(smartSearchValues);
         localStorage.removeItem('smartSearchValue');
         activeSmartSearchManager.clickInputManually();
@@ -590,7 +698,7 @@ activeMainPage.showFiltersForWhite = function () {
     $('.filterAttr_12').css('display', 'block');
     $('.filterAttr_6').css('display', 'block');
     $('.mainFilterShortCutButtonWrapper').css('display', 'block');
-$('.filterAttr_7').css({'margin-right': '18px','margin-left': '0px'});
+    $('.filterAttr_7').css({ 'margin-right': '18px', 'margin-left': '0px' });
 
     if (window.innerWidth > 1020) {
         $('.mainFilterRangeBoxStructure_4').removeClass('mainFilterGridHoverBoxWrapperShow');
@@ -630,8 +738,8 @@ activeMainPage.openFilterRangePopUp = function () {
 activeMainPage.showFiltersForYellow = function () {
     //$('.filterAttr_12').css('display', 'none');
     //$('.filterAttr_6').css('display', 'none');
-    $('.filterAttr_7').css({'margin-right': '10px','margin-left': '10px'});
-    
+    $('.filterAttr_7').css({ 'margin-right': '10px', 'margin-left': '10px' });
+
     $('.mainFilterShortCutButtonWrapper').css('display', 'none');
     activeMainPage.clearInputFilter12();
     activeMainPage.setDefaultFilter(6, false);
@@ -720,7 +828,7 @@ activeMainPage.updateFilterValue = function (type, value) {
                 $('.filterAttr_2 .mainFilter1gridTitleIcon').css('display', 'none');
                 $('.filterAttr_2 .mainFilter1gridTitle').css('color', '#a6adb8');
             }
-            activeMainPage.updateFilterQuery(2, activeMainPage.filterConfig.type2.modelsArray);
+            activeMainPage.updateFilterQuery(2, activeMainPage.filterConfig.type2.modelsArray, false);
             break;
         case 3:
             if ($('#mainFilter_type3_' + value).hasClass('mainFiltertype3Active')) {
@@ -965,9 +1073,9 @@ activeMainPage.setActiveRangeButton_14 = function (indexType, thisElm) {
     var elm = $(thisElm);
     var value = parseInt($(thisElm).attr('value'));
     activeMainPage.filterConfig.type14.clicked++
-        if (activeMainPage.filterConfig.type14.clicked === 2 && activeMainPage.filterConfig.type14.min === value) {
-            activeMainPage.filterConfig.type14.clicked = 3;
-        }
+    if (activeMainPage.filterConfig.type14.clicked === 2 && activeMainPage.filterConfig.type14.min === value) {
+        activeMainPage.filterConfig.type14.clicked = 3;
+    }
     if (activeMainPage.filterConfig.type14.clicked === 3) {
         //if($($('.mainFilterRangeButton_'+indexType)[value]).hasClass('mainFilterRangeButtonActive')){
         //$($('.mainFilterRangeButton_'+indexType)[value]).removeClass('mainFilterRangeButtonActive');
@@ -1128,7 +1236,7 @@ activeMainPage.openFilterAdvancedBox = function () {
         this.advancedBoxFilter.inactive = true;
         //if(window.innerWidth<1020){
         $('.mainFilterAdvancedStructure').removeClass('mainFilterAdvancedStructureDisplay');
-        $('.mainFilterAdvancedStructure').css('overflow', 'hidden');        
+        $('.mainFilterAdvancedStructure').css('overflow', 'hidden');
         //}
         setTimeout(function () {
             activeMainPage.advancedBoxFilter.inactive = false;
@@ -2155,7 +2263,7 @@ activeMainPage.setLoadingResults = function () {
 
 }
 
-activeMainPage.filterArrayManipulation = function (filterCategories,fromSmartSearch) {
+activeMainPage.filterArrayManipulation = function (filterCategories, fromSmartSearch) {
     filterCategories = filterCategories.split("&");
     arrangeFiltersArray = [];
     for (var i = 0; i < filterCategories.length; i++) {
@@ -2168,12 +2276,12 @@ activeMainPage.filterArrayManipulation = function (filterCategories,fromSmartSea
             arrangeFiltersArray[FilterName] += ',' + FilterValues;
         }
     }
-    if(!fromSmartSearch && filterCategories.length>1){
+    if (!fromSmartSearch && filterCategories.length > 1) {
         //activeSmartSearchManager.appendValuesInInputs(arrangeFiltersArray);
     }
     var arrangeFiltersString = '';
     for (var key in arrangeFiltersArray) {
-        if(arrangeFiltersArray[key]!==activeProductManager.nullValue){
+        if (arrangeFiltersArray[key] !== activeProductManager.nullValue) {
             arrangeFiltersString += key + '=' + arrangeFiltersArray[key] + '&';
         }
     }
@@ -2181,10 +2289,10 @@ activeMainPage.filterArrayManipulation = function (filterCategories,fromSmartSea
     return arrangeFiltersString;
 }
 
-activeMainPage.getFiltersResults = function (ProductsFiltersArray, filterQueryId,fromSmartSearch) {
+activeMainPage.getFiltersResults = function (ProductsFiltersArray, filterQueryId, fromSmartSearch) {
     activeMainPage.setLoadingResults();
     if (typeof fromSmartSearch === 'undefined') {
-        fromSmartSearch=false;
+        fromSmartSearch = false;
     }
     if (typeof activeAnalyticsManager === 'undefined') {
 
@@ -2196,9 +2304,9 @@ activeMainPage.getFiltersResults = function (ProductsFiltersArray, filterQueryId
         activeSmartSearchManager.moreValues = ProductsFiltersArray;
         ProductsFiltersArray += '&' + activeSmartSearchManager.activeValues;
     }
-    ProductsFiltersArray = activeMainPage.filterArrayManipulation(ProductsFiltersArray,fromSmartSearch);
+    ProductsFiltersArray = activeMainPage.filterArrayManipulation(ProductsFiltersArray, fromSmartSearch);
     ProductsFiltersArray = ProductsFiltersArray.replace('=,&', '');
-    
+
     /*if(ProductsFiltersArray.length!==0){
         console.log('getFiltersResults was Stopped');
         return true;
@@ -2225,7 +2333,7 @@ activeMainPage.getFiltersResults = function (ProductsFiltersArray, filterQueryId
                 activeMainTool.hideWrapper();
                 return true;
             }
-            $('.resultsTitle span').html('RESULTS ('+data.length+')');
+            $('.resultsTitle span').html('RESULTS (' + data.length + ')');
             activeMainPage.setProducts(data);
             console.log('Products:');
             console.log(data);
@@ -2506,7 +2614,7 @@ activeMainPage.setProductsView3 = function (data) {
             '</td>' +
             '<td class="resultsViewStructure3_td resultsViewStructure3_tdDisplayNone" style="display:none;">' + product.certificateId + '</td>' +
             //'<td class="resultsViewStructure3_td resultsViewStructure3_tdDisplayNone" style="display:none;">' + product.forSellStatus + '</td>' +
-            '<td class="resultsViewStructure3_td resultsViewStructure3_tdDisplayNone" style="display:none;">' + product.imageSrc+ '</td>' +
+            '<td class="resultsViewStructure3_td resultsViewStructure3_tdDisplayNone" style="display:none;">' + product.imageSrc + '</td>' +
             //'<td class="resultsViewStructure3_td resultsViewStructure3_tdDisplayNone" style="display:none;">' + product.imageSrc+ '</td>' +
             '<td class="resultsViewStructure3_td">' + product.model + '</td>' +
             '<td class="resultsViewStructure3_td">' + product.caratString + '</td>' +
@@ -2524,11 +2632,11 @@ activeMainPage.setProductsView3 = function (data) {
             '<td class="resultsViewStructure3_td">' + product.lab + '</td>' +
             '<td class="resultsViewStructure3_td">' + product.location + '</td>';
 
-/*        if (activeMainPage.activeColorType === 'white') {
-            content += '<td class="resultsViewStructure3_td">' + product.listPriceString + '</td>' +
-                '<td class="resultsViewStructure3_td">' + product.discountString + '</td>';
-
-        }*/
+        /*        if (activeMainPage.activeColorType === 'white') {
+                    content += '<td class="resultsViewStructure3_td">' + product.listPriceString + '</td>' +
+                        '<td class="resultsViewStructure3_td">' + product.discountString + '</td>';
+        
+                }*/
 
         content += '<td class="resultsViewStructure3_td">' + product.ppcString + '</td>' +
             '<td >' +
@@ -2563,32 +2671,32 @@ activeMainPage.setProductsView3 = function (data) {
             ],
             dom: 'Bfrtip',
             buttons: [{
-                    extend: 'excelHtml5',
-                    className: 'exportExcelButton',
-                    title: activeFileName
+                extend: 'excelHtml5',
+                className: 'exportExcelButton',
+                title: activeFileName
+            },
+            {
+                extend: 'excelHtml5',
+                text: 'Export selected',
+                className: 'exportSelectedButton',
+                exportOptions: {
+                    columns: ':visible:not(.not-exported)',
+                    modifier: {
+                        selected: true
+                    }
                 },
-                {
-                    extend: 'excelHtml5',
-                    text: 'Export selected',
-                    className: 'exportSelectedButton',
-                    exportOptions: {
-                        columns: ':visible:not(.not-exported)',
-                        modifier: {
-                            selected: true
-                        }
-                    },
-                    title: activeFileName
-                },
-                {
-                    extend: 'pdfHtml5',
-                    title: activeFileName,
-                    text: 'PDF',
-                    orientation: 'landscape'
-                },
-                {
-                    extend: 'csv',
-                    title: activeFileName
-                },
+                title: activeFileName
+            },
+            {
+                extend: 'pdfHtml5',
+                title: activeFileName,
+                text: 'PDF',
+                orientation: 'landscape'
+            },
+            {
+                extend: 'csv',
+                title: activeFileName
+            },
                 'print', 'copy'
             ],
             select: {
