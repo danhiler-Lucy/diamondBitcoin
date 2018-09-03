@@ -140,8 +140,10 @@ activeProductPopup.turnOnImage360 = function () {
 }
 
 activeProductPopup.showImage360 = function () {
+    
     /*activeProductPopup.showImage360Zoom();
     return true;*/
+    return true;
     var product=activeProductManager.productsIds[activeProductPopup.activeProductId];  
     if(!product.withImage){
         return true;
@@ -314,6 +316,7 @@ activeProductPopup.setPopupValues = function (productId) {
     $('#shareInputCopyButton').attr('data-clipboard-text',activeProductPopup.urlToShare+product.productId);
     //$('#shareProductInput').attr('value','https://www.dob.com/search/?productId='+product.productId);
     if(!product.withImage){
+    
         var imageSrc = '../assets/company/sampleDiamond.png';
         $('#productPopupStructure .productImage').attr('src',imageSrc);
         $('#productPopupStructure .image360Icon').css('display','none');
@@ -321,7 +324,12 @@ activeProductPopup.setPopupValues = function (productId) {
         $('#productPopupStructure .image360ZoomIcon').css('display','none');
     }
     else{
-        $('#productPopupStructure .productImage').attr('src',product.imageSrc);
+        if(!product.imageLoaded){
+            $('#productPopupStructure .productImage').attr('src','../assets/company/sampleDiamond.png');
+        } else{
+            $('#productPopupStructure .productImage').attr('src',product.imageSrc);
+        }
+        
         setTimeout(function(){ 
         var image360src = 'https://segoma.com/v.php?type=iframe&id='+product.segomaId;
         if(window.innerWidth>1020){
@@ -335,9 +343,9 @@ activeProductPopup.setPopupValues = function (productId) {
         
         }, 600);
         
-        $('#productPopupStructure .image360Icon').css('display','block');
+        // $('#productPopupStructure .image360Icon').css('display','block');
         $('#productPopupStructure .masterCompareButtonStructure').css('display','block');
-        $('#productPopupStructure .image360ZoomIcon').css('display','block');
+        // $('#productPopupStructure .image360ZoomIcon').css('display','block');
         
     }
     

@@ -1769,7 +1769,7 @@ span.itemCostBitcoinIcon img {
     }
     .productPopupStructure .productImage {
         width: 249px;
-        height: 198px;
+        /* height: 198px; */
     }
     .productPopupStructure .productImage360 {
         width: 315px;
@@ -1889,6 +1889,7 @@ span.itemCostBitcoinIcon img {
         display: none!important;
     }
     .productPopupStructure .image360Icon {
+        display: none;
         bottom: 16px;
         width: 60px;
         height: 30px;
@@ -1914,7 +1915,7 @@ span.itemCostBitcoinIcon img {
         bottom: 5px;
         right: unset;
         left: 11px;
-        bottom: 52px;
+        bottom: 25px;
         width: 60px;
         height: 30px;
         /* font-size: 26px; */
@@ -2138,12 +2139,13 @@ span.itemCostBitcoinIcon img {
     .productPopupCloseButton {
         top: 0px;
         left: 0px;
-        background-color: transparent;
+        background-color: white;
         box-shadow: 0 0 0;
-        width: 90px;
-        height: 60px;
+        width: 74px;
+        height: 25px;
         padding-top: 13px;
         padding-left: 6px;
+        border-radius:0 0 25px 0;
     }
     .recommendedProductPopUpItemStructure {
         width: 45%;
@@ -2480,7 +2482,7 @@ span.itemCostBitcoinIcon img {
 }
 
 }
-
+/* 
 @media screen and (max-width: 1020px) and (min-width: 500px) {
     .productPopupStructure .productPopupWrapper {
         max-width: 100%;
@@ -2528,9 +2530,9 @@ span.itemCostBitcoinIcon img {
     .productImage360Structure {
         background-color: white;
     }
-}
+} */
 
-@media screen and (max-height: 670px) and (min-width: 1020px) {
+/* @media screen and (max-height: 670px) and (min-width: 1020px) {
     .productPopupStructure .productPopupWrapper {
         height: 535px;
     }
@@ -2551,7 +2553,7 @@ span.itemCostBitcoinIcon img {
         width: 148px;
         height: 118px;
     }
-}
+} */
 
 
 /*hardcoded

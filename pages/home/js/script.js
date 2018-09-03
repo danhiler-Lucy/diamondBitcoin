@@ -1,6 +1,6 @@
 function mainPage(){
     this.pageId=0; //home
-    this.productsLength=16; //home
+    this.productsLength=24; //home
 }
 
 var activeMainPage = new mainPage();

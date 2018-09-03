@@ -91,7 +91,7 @@
                         <img src="../assets/search-menu-30@3x.png" alt="Zoom In" />
                     </div>
                     <div class="image360Icon" onclick="activeProductPopup.showImage360()">
-                        <img src="../assets/icons/360icon.png" alt="360" />
+                        <img src="../assets/icons/360icon.png" style="display:none" alt="360" />
                     </div>
                     <div class="masterCompareCloseButtonStructure" onclick="activeProductPopup.showMasterStructure();">
                         <div class="masterCompareCloseButtonIcon">

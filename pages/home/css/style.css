@@ -538,9 +538,10 @@
 }
 .blockWrapper{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     /* flex-wrap: wrap */
     margin-bottom: 59px;
+
 }
 .rightSide {
     width: 40%;
@@ -670,7 +671,7 @@
           text-align: center;
       }
       .rightSide{
-        width: initial;
+        width: 100%;
         margin-top:15px;
       }
       .mainContentWrapper{

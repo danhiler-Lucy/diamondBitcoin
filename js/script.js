@@ -15,7 +15,7 @@ new Clipboard('.clipboardButton');
 });
 
 function mainTool(){
-    //this.serverSrc="http://localhost:3000/api/v1/"; 
+    // this.serverSrc="http://localhost:3000/api/v1/"; 
     this.serverSrc="https://dob-api.herokuapp.com/api/v1/";
     this.googleApiKey = 'AIzaSyD0VOEGncvzBaExxxaQbhU_-xE4ccJRVGQ';
     this.touchDevice=false;
@@ -359,9 +359,11 @@ activeMainTool.validateEmail = function (email) {
     var image = new Image();
     image.onload = function () {
         $('html').find('img[src$="'+src+'"]').css('opacity','1');
+        var product=activeProductManager.productsIds[productId];
+        product.imageLoaded = true;
     }
     image.onerror = function () {
-       var product=activeProductManager.productsIds[productId];
+        var product=activeProductManager.productsIds[productId];
        product.productImage = '';
         product.withImage = false;
         product.imageSrc = '../assets/company/sampleDiamond.png';

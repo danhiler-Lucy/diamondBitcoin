@@ -147,6 +147,7 @@ activeProductManager.productManipulation = function (product) {
     var directLink = product.directLink;
     product.shipping = product.location
     product.shipping = activeProductManager.nullValue;
+    product.imageLoaded = false;
     product.productImage ='https://s3.eu-west-2.amazonaws.com/diamonds-images/'+product.productId+'/still.jpg';
     switch(product.model){
         case 'Round':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
