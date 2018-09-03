@@ -13,29 +13,35 @@
 <?php include('../templates/header/index.php') ?>
 <div class="mainPage homePage">
 	<div class="mainSection">
-		<div class="mainTitle">
-                    <div class="boxSectionCenter">
+
+	<div class="mainTitle">
+                <div class="blockWrapper">
+                        <div class="leftSide">
                         <div class="boxSectionCenterWrapper">
                             <div class="boxSectionCenterTitle">
                                 Buy diamonds with 
                             </div>
                         <div class="boxSectionCenterImg">
-                                <img src="../assets/company/bitcoinLogoBlue.png">
+                                <img class="mainStartLogo" src="../assets/company/bitcoinLogoBlue.png">
                             </div>
                             </div>
-                    </div>
-                    <!--
-                                                            <div class="mainTitleStructure">
-                                                                    SEARCH YOUR OWN DIAMOND:
-                                                            </div>
-                                                            <div class="generalSearchStructure" >
-                                                                <?php include('../templates/smartSearch/index.php') ?>
-                                                                <div class="generalSearchbuttonIconStructure" onclick="activeMainPage.setUrlParamsToSearch();">
-                                                                    SEARCH
-                                                                </div>
-                                                        </div>
-                    -->
-                        <div class="boxSection2grids">
+
+                        <div class="mainDescStart">
+                            Diamonds-Bitcoin it's part of MOTIGANZ Group, Over a period of 55 years, MOTIGANZ has grown from small diamond manufacturer to the owner of the biggest factory for polished diamonds in Africa that located in Botswana.
+                        </div>
+                        <div class="teaserSectionButton" onclick="activeMainTool.redirectPage(1)">
+                            <div class="teaserSectionButtonTitle">VIEW MORE</div>
+                        </div>
+
+                </div>
+                <div class="rightSide">
+                
+                            <div class="btcwdgt-news" bw-entries="3" bw-theme="light"></div>
+                        
+</div>
+</div>
+
+                        <div class="blockWrapper">
                         <div class="boxSection2gridsWrapper">
                             <div class="boxSection2gridsWrapperLeft">
                         <div class="boxSection2gridsWrapperImg">
@@ -56,8 +62,57 @@
                                 </div>
                             </div>
                     </div>
-        </div>
         
+
+<div class="blockWrapper">
+    <div class="leftSide">
+        <div>
+<div class="boxSectiongridsWrapperTitle">Convert bitcoin to high value tangible goods</div>
+-Diamonds manufacture over 65 years<br>
+-35 Years Sightholder with Debeers<br>
+-Shipping all over the world<br>
+-High quality with fair price<br>
+
+-Diamonds manufacture over 65 years<br>
+-35 Years Sightholder with Debeers<br>
+-Shipping all over the world<br>
+-High quality with fair price
+    </div>
+    <div class="teaserSectionButton" onclick="activeMainTool.redirectPage(1)">
+                            <div class="teaserSectionButtonTitle">VIEW MORE</div>
+                        </div>
+
+        </div>
+                        <div class="rightSide">
+                        <div class="btcwdgt-chart" bw-theme="light"></div>
+      
+      </div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
         
@@ -69,12 +124,16 @@
 				YELLOW
 			</div>
 		</div>
-	</div>
+    </div>
+    
+    
+
 	<div class="mainContentWrapper">
 		<div class="recommendedSection">
 				<div class="buttonViewMore desktopElm" onclick="activeMainTool.redirectPage(1)">
 					MORE
-				</div>
+                </div>
+                
 				<div class="mainTitle">
                                                                                         POPULAR SEARCHES | <span>BY LAST 24 HOURS</span>
 				</div>

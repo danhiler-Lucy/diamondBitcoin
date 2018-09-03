@@ -148,10 +148,22 @@ activeProductManager.productManipulation = function (product) {
     product.shipping = product.location
     product.shipping = activeProductManager.nullValue;
     product.productImage ='https://s3.eu-west-2.amazonaws.com/diamonds-images/'+product.productId+'/still.jpg';
+    switch(product.model){
+        case 'Round':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Princess':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Pear':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Cushion':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Radiant':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Oval':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Marquise':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Heart':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Emerald':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        
+
+    }
     if (typeof product.productImage === 'undefined' || product.productImage === '') {
         product.productImage = '';
         product.withImage = false;
-        product.imageSrc = '../assets/company/sampleDiamond.png';
     }
     else {
         product.withImage = true;

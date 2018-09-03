@@ -545,12 +545,14 @@ activeMainPage.showBySortType = function () {
 }
 
 activeMainPage.getBySortType = function (products) {
+    console.log("pass",activeMainPage.activeSortType,activeMainPage.activeSortTypeDirection)
     switch (activeMainPage.activeSortType) {
         case 0:
             { //price
                 if (activeMainPage.activeSortTypeDirection === 0) {
                     return activeMainPage.sortArrayByhighestPrice(products);
                 } else {
+                    console.log("pass")
                     return activeMainPage.sortArrayByLowestPrice(products);
                 }
                 break;
