@@ -282,7 +282,7 @@ activeMainPage.setCartSection = function () {
             '<div class="resultsViewStructure3_td">' + product.totalPriceString + '</div>' +
             '</td>';
         contentTable += '</tr>';
-        activeMainTool.loadImage(product.imageSrc);
+        activeMainTool.loadImage(product.imageSrc,product.id);
     }
     $('#cartResults').html(content);
     activeMainPage.productsCost = totalCost;

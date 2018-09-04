@@ -292,7 +292,7 @@ Color:
 <div class="newFilterBox">
 <input class='newFilterStep'
 	type="text"
-	name="Color"
+	name="color"
 	data-provide="slider"
 	data-slider-ticks="[1, 2, 3,4,5,6,7,8,9,10,11]"
 	data-slider-ticks-labels='["D", "E", "F","G", "H", "I","J","K","L","M","N"]'
@@ -312,7 +312,7 @@ Cut:
 <div class="newFilterBox">
 <input class='newFilterStep'
 	type="text"
-	name="Cut"
+	name="cut"
 	data-provide="slider"
 	data-slider-ticks="[1, 2, 3,4]"
 	data-slider-ticks-labels='["F",  "G","VG","EX"]'
@@ -332,7 +332,7 @@ Clarity:
 <div class="newFilterBox">
 <input class='newFilterStep'
 	type="text"
-	name="Clarity"
+	name="clarity"
 	data-provide="slider"
 	data-slider-ticks="[1, 2, 3,4,5,6,7]"
 	data-slider-ticks-labels='["IF", "VVS1", "VVS2","VS1","VS2","SI1","SI2"]'

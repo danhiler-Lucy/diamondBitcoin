@@ -355,6 +355,9 @@ activeMainTool.validateEmail = function (email) {
  activeMainTool.loadImage = function (src,productId) {
      if(typeof productId==='undefined'){
          productId='';
+         console.log(src)
+         return
+         
      }
     var image = new Image();
     image.onload = function () {
@@ -364,7 +367,7 @@ activeMainTool.validateEmail = function (email) {
     }
     image.onerror = function () {
         var product=activeProductManager.productsIds[productId];
-       product.productImage = '';
+        product.productImage = '';
         product.withImage = false;
         product.imageSrc = '../assets/company/sampleDiamond.png';
     }

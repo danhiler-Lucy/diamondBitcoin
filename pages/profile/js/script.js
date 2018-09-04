@@ -75,7 +75,7 @@ activeMainPage.setProducts= function (data) {
                                         '<td class="resultsViewStructure3_td">'+product.orderDate+'</td>'+
                                         '<td class="resultsViewStructure3_td">'+product.orderId+'</td>';
                     content+='</tr>';
-                    activeMainTool.loadImage(product.imageSrc);
+                    activeMainTool.loadImage(product.imageSrc,product.id);
             }
             content+='</tr></tbody>';
             content+='</table>';

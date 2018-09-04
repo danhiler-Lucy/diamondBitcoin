@@ -178,7 +178,7 @@ activeMainPage.showContentProducts= function (products) {
         }
         for(var i=0;i<resultsLength;i++){
             content+=  activeProductCard.template1(products[i]);
-            activeMainTool.loadImage(products[i].imageSrc);
+            activeMainTool.loadImage(products[i].imageSrc,products[i].id);
         }
         $('#headerResultsStructureCounter').html(resultsLength);
          activeMainPage.setProductsView3(products);

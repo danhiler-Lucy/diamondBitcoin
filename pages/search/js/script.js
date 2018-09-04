@@ -14,9 +14,9 @@ function mainPage() {
     };
     this.newFilters = {}
     this.newFiltersMapping = {
-        Color: { 1: 'D', 2: 'E', 3: 'F', 4: 'G', 5: 'H', 6: 'I', 7: 'J', 8: 'K', 9: 'L', 10: 'M', 11: 'N' },
-        Clarity: { 1: 'IF', 2: 'VVS1', 3: 'VVS2', 4: 'VS1', 5: 'VS2', 6: 'SI1', 7: 'SI2' },
-        Cut: { 1: 'F', 2: 'G', 3: 'VG', 4: 'EX' }
+        color: { 1: 'D', 2: 'E', 3: 'F', 4: 'G', 5: 'H', 6: 'I', 7: 'J', 8: 'K', 9: 'L', 10: 'M', 11: 'N' },
+        clarity: { 1: 'IF', 2: 'VVS1', 3: 'VVS2', 4: 'VS1', 5: 'VS2', 6: 'SI1', 7: 'SI2' },
+        cut: { 1: 'F', 2: 'G', 3: 'VG', 4: 'EX' }
     }
     this.newModelchosen = ""
 }
@@ -29,22 +29,30 @@ $('.newFilterStep,#newFilterCarat,#newFilterPrice').on('slideStop', (e) => {
 })
 
 $('#newMinPrice,#newMaxPrice,#newMinCarat,#newMaxCarat').on('focusout', (e) => {//manual input update
-    const newValue = e.target.value
+    let newValue = e.target.value
     const attName = e.target.getAttribute('ID')
-    // $('#'+attName).val("$" + newValue)
 
+    newValue=newValue.replace('$','');
+    newValue=newValue.replace('ct','');
+    newValue = newValue.trim()
+
+if(!isNaN(newValue)){
     switch (attName) {
         case 'newMinPrice':
-            activeMainPage.newFilters.fromPpc = newValue;
+            activeMainPage.newFilters.fromPrice = newValue;
+            $('#'+attName).val("$" + newValue)
             break
         case 'newMaxPrice':
-            activeMainPage.newFilters.toPpc = newValue;
+            activeMainPage.newFilters.toPrice = newValue;
+            $('#'+attName).val("$" + newValue)
             break
         case 'newMinCarat':
             activeMainPage.newFilters.fromCarat = newValue;
+            $('#'+attName).val(newValue+" ct")
             break
-        case 'newMaxPrice':
+        case 'newMaxCarat':
             activeMainPage.newFilters.toCarat = newValue;
+            $('#'+attName).val(newValue+" ct")
             break
         default:
             break
@@ -53,6 +61,7 @@ $('#newMinPrice,#newMaxPrice,#newMinCarat,#newMaxCarat').on('focusout', (e) => {
     }
 
     activeMainPage.newFiltersUpdated()
+}
 })
 $(".mainFilterButtonShapeImageStructure").on('click', (e) => {
     let modelsArr = (activeMainPage.newFilters.model) ? activeMainPage.newFilters.model.split(',') : []
@@ -69,9 +78,14 @@ $(".mainFilterButtonShapeImageStructure").on('click', (e) => {
     activeMainPage.newFiltersUpdated()
 })
 document.querySelector('.report').addEventListener('click', (e) => {
+    const $selectedElement= $('.report div.selected')
     $('.report div').removeClass('selected')
-    e.target.classList.add('selected')
-    activeMainPage.newFilters.lab = e.target.innerHTML;
+    if($(e.target).is($selectedElement)){
+        activeMainPage.newFilters.lab = '';
+    }else{
+        e.target.classList.add('selected')
+        activeMainPage.newFilters.lab = e.target.innerHTML;
+    }
 
     activeMainPage.newFiltersUpdated()
 
@@ -97,8 +111,8 @@ $('#newFilterPrice').on('slide', (e) => {
     $('#newMinPrice').val("$" + e.value[0])
     $('#newMaxPrice').val("$" + e.value[1])
 
-    activeMainPage.newFilters.fromPpc = e.value[0];
-    activeMainPage.newFilters.toPpc = e.value[1];
+    activeMainPage.newFilters.fromPrice = e.value[0];
+    activeMainPage.newFilters.toPrice = e.value[1];
 
 })
 $('#newMinPrice,#newMaxPrice').on('keyUp', (e) => {
@@ -498,7 +512,7 @@ activeMainPage.showContentProducts = function (products) {
     }
     for (var i = 0; i < resultsLength; i++) {
         content += activeProductCard.template1(products[i]);
-        activeMainTool.loadImage(products[i].imageSrc);
+        activeMainTool.loadImage(products[i].imageSrc,products[i].id);
     }
 
     activeMainPage.setProductsView3(products);
@@ -2981,34 +2995,50 @@ activeMainPage.clearSmartSearchInput = function () {
 
 
 activeMainPage.clearAllFilters = function () {
-    activeMainPage.setDefaultFilter(4, false);
-    activeMainPage.setDefaultFilter(5, false);
-    activeMainPage.setDefaultFilter(6, false);
-    activeMainPage.setDefaultFilter(7, false);
-    activeMainPage.setDefaultFilter(8, false);
-    activeMainPage.setDefaultFilter(9, false);
-    activeMainPage.setDefaultFilter(10, false);
-    activeMainPage.clearInputFilter11();
-    activeMainPage.clearInputFilter12();
-    activeMainPage.setDefaultFilter(13, false);
-    activeMainPage.clearInputFilter14();
-    activeMainPage.clearInputFilter15();
-    activeMainPage.clearInputFilter16();
-    activeMainPage.clearInputFilter17();
-    activeMainPage.clearInputFilter18();
-    activeMainPage.clearInputFilter19();
-    activeMainPage.clearInputFilter20();
-    activeMainPage.clearInputFilter21();
-    activeMainPage.clearInputFilter22();
-    activeMainPage.clearInputFilter23();
-    activeMainPage.clearInputFilter24();
-    activeMainPage.clearInputFilter25();
-    activeMainPage.clearInputFilterImageOnly();
-    activeMainPage.clearInputFilterBGM();
-    activeMainPage.clearInputFilter26();
-    activeMainPage.clearSmartSearchInput();
-    //activeMainPage.setDefaultFilter(26,false);
-    activeMainPage.clearFilter2();
+    //show all diamonds
+    activeMainPage.newFilters= {}
+    activeMainPage.newFiltersUpdated() 
+
+    //update ui
+    $('.report div').removeClass('selected')
+    const $priceSlider= $('#newFilterPrice')
+    const $caratSlider= $('#newFilterCarat')
+    $('.newFilterStep').add($caratSlider).add($priceSlider).bootstrapSlider('refresh')
+$('#newMinPrice').val('$'+$priceSlider.data('sliderMin'))
+$('#newMaxPrice').val('$'+$priceSlider.data('sliderMax'))
+$('#newMinCarat').val($caratSlider.data('sliderMin')+' ct')
+$('#newMaxCarat').val($caratSlider.data('sliderMax')+' ct')
+activeMainPage.clearFilter2();//clear models
+
+
+    //Old Filters
+    // activeMainPage.setDefaultFilter(4, false);
+    // activeMainPage.setDefaultFilter(5, false);
+    // activeMainPage.setDefaultFilter(6, false);
+    // activeMainPage.setDefaultFilter(7, false);
+    // activeMainPage.setDefaultFilter(8, false);
+    // activeMainPage.setDefaultFilter(9, false);
+    // activeMainPage.setDefaultFilter(10, false);
+    // activeMainPage.clearInputFilter11();
+    // activeMainPage.clearInputFilter12();
+    // activeMainPage.setDefaultFilter(13, false);
+    // activeMainPage.clearInputFilter14();
+    // activeMainPage.clearInputFilter15();
+    // activeMainPage.clearInputFilter16();
+    // activeMainPage.clearInputFilter17();
+    // activeMainPage.clearInputFilter18();
+    // activeMainPage.clearInputFilter19();
+    // activeMainPage.clearInputFilter20();
+    // activeMainPage.clearInputFilter21();
+    // activeMainPage.clearInputFilter22();
+    // activeMainPage.clearInputFilter23();
+    // activeMainPage.clearInputFilter24();
+    // activeMainPage.clearInputFilter25();
+    // activeMainPage.clearInputFilterImageOnly();
+    // activeMainPage.clearInputFilterBGM();
+    // activeMainPage.clearInputFilter26();
+    // activeMainPage.clearSmartSearchInput();
+    // //activeMainPage.setDefaultFilter(26,false);
 }
 
 activeMainPage.getExValuesUrl();
@@ -3029,3 +3059,4 @@ $("#generalSearchInput").keyup(function (event) {
         activeSmartSearchManager.getValues($('#generalSearchInput')[0]);
     }
 });
+

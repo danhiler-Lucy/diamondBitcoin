@@ -528,7 +528,7 @@ table {
 }
 
 .recommendedProductPopUpItemStructure {
-    width: 143px;
+    width: 129px;
     height: 143px;
     box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     border-radius: 2px;
@@ -541,6 +541,7 @@ table {
     -o-transition: all .3s ease;
     transition: all .3s ease;
     overflow: hidden;
+    position:  relative;
 }
 
 .recommendedProductPopUpItemStructure:hover {
@@ -551,7 +552,7 @@ table {
     background-color: #c6c6c61c;
     /* display: grid; */
     /* margin-bottom: 5px; */
-    width: 143px;
+    /* width: 143px; */
     height: 113px;
     text-align: center;
     background-image: url(../../../assets/company/sampleDiamond.png);
@@ -562,8 +563,8 @@ table {
 }
 
 .recommendedProductPopUpItemImage img {
-    /* width: 143px; */
-    height: 100%;
+    width: 100%;
+    /* height: 100%; */
     opacity: 0;
     -webkit-transition: all .6s ease;
     -moz-transition: all .6s ease;
@@ -574,6 +575,10 @@ table {
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom:  20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .recommendedProductPopUpItemAttr {
@@ -990,12 +995,15 @@ input#shareProductInput {
     font-size: 12px;
     font-weight: 600;
     letter-spacing: 0.2px;
-    position: relative;
+    position: absolute;
     z-index: 1;
     background-color: white;
     height: 19px;
     padding-top: 1px;
-    top: 3px;
+    /* top: 3px; */
+    bottom: 0px;
+    left: 0px;
+    padding-bottom: 5px;
 }
 
 .productAttrTableValueTdCertTitle {
@@ -1754,7 +1762,8 @@ span.itemCostBitcoinIcon img {
     overflow: hidden;
 }
     .recommendedProductPopUpItemAttrStructure {
-        padding-top: 3px!important;
+        /* padding-top: 3px!important; */
+        bottom: 6px;
     }
     .productPopupStructure .productPopupWrapper {
         width: 845px;
@@ -1784,8 +1793,8 @@ span.itemCostBitcoinIcon img {
         margin-right: 0px;
     }
     .recommendedProductPopUpItemImage img {
-        width: 136px;
-        height: 117px;
+        /* width: 136px; */
+        /* height: 117px; */
         position: relative;
         top: 0px;
     }

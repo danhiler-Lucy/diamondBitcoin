@@ -324,6 +324,7 @@ activeProductPopup.setPopupValues = function (productId) {
         $('#productPopupStructure .image360ZoomIcon').css('display','none');
     }
     else{
+        $('#productPopupStructure .image360ZoomIcon').css('display','block');
         if(!product.imageLoaded){
             $('#productPopupStructure .productImage').attr('src','../assets/company/sampleDiamond.png');
         } else{
@@ -791,7 +792,7 @@ activeProductPopup.setRecommendedProducts= function (product,data,match) {
                                                                                             '</div>'+
                                                                                     '</div>'+
                                                                             '</div>';
-                                                                    activeMainTool.loadImage(productSuggested.imageSrc);
+                                                                    activeMainTool.loadImage(productSuggested.imageSrc,productSuggested.id);
                                                                    
                                             }
                                     }
