@@ -149,16 +149,17 @@ activeProductManager.productManipulation = function (product) {
     product.shipping = activeProductManager.nullValue;
     product.imageLoaded = false;
     product.productImage ='https://s3.eu-west-2.amazonaws.com/diamonds-images/'+product.productId+'/still.jpg';
+    // product.productImage=''
     switch(product.model){
-        case 'Round':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Princess':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Pear':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Cushion':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Radiant':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Oval':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Marquise':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Heart':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
-        case 'Emerald':product.sampleImageModel = '../assets/company/sampleDiamond.png'; break;
+        case 'Round':product.sampleImageModel = '../assets/company/sample_round.jpg'; break;
+        case 'Princess':product.sampleImageModel = '../assets/company/sample_princess.jpg'; break;
+        case 'Pear':product.sampleImageModel = '../assets/company/sample_pear.jpg'; break;
+        case 'Cushion':product.sampleImageModel = '../assets/company/sample_cushion.jpg'; break;
+        case 'Radiant':product.sampleImageModel = '../assets/company/sample_radiant.jpg'; break;
+        case 'Oval':product.sampleImageModel = '../assets/company/sample_oval.jpg'; break;
+        case 'Marquise':product.sampleImageModel = '../assets/company/sample_marquise.jpeg'; break;
+        case 'Heart':product.sampleImageModel = '../assets/company/sample_heart.jpg'; break;
+        case 'Emerald':product.sampleImageModel = '../assets/company/sample_emerald.jpg'; break;
         
 
     }

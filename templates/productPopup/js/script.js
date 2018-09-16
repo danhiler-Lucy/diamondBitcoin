@@ -6,7 +6,7 @@ function productPopup(){
     this.recommendedProductsMaxLength= 5;
     this.activeProductId=-1;
     this.availableToOpen=true;
-    this.urlToShare='https://www.diamonds-bitcoin.com/diamondView=';
+    this.urlToShare='https://www.diamonds-bitcoin.com/search/?diamondView=';
 }
 
 var activeProductPopup = new productPopup();
@@ -315,35 +315,45 @@ activeProductPopup.setPopupValues = function (productId) {
     //data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"
     $('#shareInputCopyButton').attr('data-clipboard-text',activeProductPopup.urlToShare+product.productId);
     //$('#shareProductInput').attr('value','https://www.dob.com/search/?productId='+product.productId);
-    if(!product.withImage){
+
+
     
+    
+    if(!product.withImage){
+        console.log("with")
         var imageSrc = '../assets/company/sampleDiamond.png';
-        $('#productPopupStructure .productImage').attr('src',imageSrc);
+        $('.productPopupStructure .productImage').css('opacity',1)
+        $('#productPopupStructure .productImage').attr('src',imageSrc)
         $('#productPopupStructure .image360Icon').css('display','none');
         $('#productPopupStructure .masterCompareButtonStructure').css('display','none');
         $('#productPopupStructure .image360ZoomIcon').css('display','none');
     }
     else{
+        console.log("loaded")
         $('#productPopupStructure .image360ZoomIcon').css('display','block');
         if(!product.imageLoaded){
+            // activeMainTool.loadImage(product.imageSrc,productId)
             $('#productPopupStructure .productImage').attr('src','../assets/company/sampleDiamond.png');
         } else{
             $('#productPopupStructure .productImage').attr('src',product.imageSrc);
+            $('.productPopupStructure img.productImage').css('opacity',1);
         }
         
         setTimeout(function(){ 
-        var image360src = 'https://segoma.com/v.php?type=iframe&id='+product.segomaId;
-        if(window.innerWidth>1020){
+            var image360src = 'https://segoma.com/v.php?type=iframe&id='+product.segomaId;
+            if(window.innerWidth>1020){
                 activeProductPopup.turnOnImage360();
             }
-        /*if($('.productPopupStructure #productImage360').attr('src')!==image360src){
-            $('.productPopupStructure #productImage360').attr('src',image360src);
-            //activeCompareMaster.setMasterProducts();
-            $('.productPopupStructure .productImage360_zoom').attr('src',image360src+'&zoom=1');
-        }*/
-        
+            /*if($('.productPopupStructure #productImage360').attr('src')!==image360src){
+                $('.productPopupStructure #productImage360').attr('src',image360src);
+                //activeCompareMaster.setMasterProducts();
+                $('.productPopupStructure .productImage360_zoom').attr('src',image360src+'&zoom=1');
+            }*/
+            
         }, 600);
         
+        $('#productPopupStructure .productImage').attr('src',product.imageSrc).css('opacity',0);
+        activeMainTool.loadImage(product.imageSrc,product.id);
         // $('#productPopupStructure .image360Icon').css('display','block');
         $('#productPopupStructure .masterCompareButtonStructure').css('display','block');
         // $('#productPopupStructure .image360ZoomIcon').css('display','block');

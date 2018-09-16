@@ -1,6 +1,6 @@
 function mainPage(){
     this.pageId=8; //aboutus
-    this.navbarTheme = 'dark';
+    this.navbarTheme = '';
 }
 
 var activeMainPage = new mainPage();

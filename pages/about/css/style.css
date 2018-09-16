@@ -6,7 +6,7 @@ body {
 }
 
 .mainPage {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.25)), url(../../../assets/company/pexels-photo-356148.jpg);
+    /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.25)), url(../../../assets/company/pexels-photo-356148.jpg); */
     background-size: cover;
     background-position-y: 0%;
     background-repeat: no-repeat;
@@ -17,12 +17,15 @@ body {
 }
 
 .aboutUsTextStructure {
-    width: 825px;
-    display: flex;
+    width: 1000px;
+    /* display: flex; */
     /* align-items: center; */
     justify-content: space-between;
-    margin: 40px auto 0 auto;
-    padding-left: 56px;
+    margin: 0px auto 0 auto;
+    /* padding-left: 56px; */
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
 }
 
 .aboutUsTextStructure h1 {
@@ -54,10 +57,10 @@ body {
 }
 
 .showcaseImagesStructure img {
-    margin: 0 38px;
-    height: 166px;
-    box-shadow: 0px 3px 3px 0px #00000042;
-    display: none;
+    margin: 0 28px;
+    /* height: 166px; */
+    /* box-shadow: 0px 3px 3px 0px #00000042; */
+    /* display: none; */
 }
 
 .mainMenuLoginButtonAboutStructure {
@@ -200,8 +203,8 @@ body {
 }
 
 .mainHeaderStructure .navBarTitle {
-    color: white!important;
-    opacity: 1!important;
+    /* color: white!important; */
+    /* opacity: 1!important; */
 }
 
 .mainHeaderStructure .navBarTitle:hover {
@@ -217,7 +220,7 @@ body {
 }
 
 .mainHeaderStructure .navBarTitleActive {
-    box-shadow: inset 0px -4px 0px 0px white!important;
+    /* box-shadow: inset 0px -4px 0px 0px white!important; */
 }
 
 .mainHeaderMinWrapper .navBarTitleActive {
@@ -233,6 +236,90 @@ body {
 
 .aboutUsImageStructure {
     display: none;
+}
+.aboutUsTitle {
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 100%;
+    clear: both;
+    margin-bottom: 52px;
+}
+
+.aboutUsSectionLeftStructure {
+    float: left;
+    width: 50%;
+    text-align: left;
+}
+
+.aboutUsSectionLeftStructure .aboutUsSectionImage {
+    width: 80%;
+    /* padding-left: 10%; */
+    /* padding-right:  10%; */
+    border: 2px solid #000000e0;
+    border-radius: 3px;
+}
+.aboutUsSectionRightStructure {
+    float: right;
+    width: 50%;
+    /* float: left; */
+    /* width: 50%; */
+    /* text-align: left; */
+}
+.aboutUsSectionSep {
+    clear: both;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.aboutUsSectionRightStructure .aboutUsSectionImage {
+    width: 80%;
+    position: relative;
+    left: 20%;
+    border: 2px solid #000000e0;
+    border-radius: 3px;
+}
+.aboutUsBoxStructure {
+    width: 100%;
+    max-width: 323px;
+    padding-right:  20px;
+    padding-left:  20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-bottom: 31px;
+}
+
+.aboutUsBoxesStructure {
+    /* display: flex; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.aboutUsBoxImageStructure img {
+    width: 100%;
+    /* width: 259px; */
+    border: 2px solid #000000e0;
+    border-radius: 3px;
+}
+
+.aboutUsBoxDate {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.aboutUsBoxDesc {
+    text-align: center;
+    line-height: 21px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.showcaseImagesStructure img {
+    max-width: 150px;
 }
 @media screen and (max-width: 1357px) {}
 
@@ -309,7 +396,9 @@ body {
 }
 
 .mainPage {
-    padding-top: 66px;
+    padding-top: 110px;
+    padding-left:  30px;
+    padding-right:  30px;
 }
 .showcaseImagesStructure {
     width: 100%;
@@ -319,5 +408,26 @@ body {
 
 .showcaseImagesStructure img {
     margin-bottom: 21px;
+}
+.aboutUsSectionLeftStructure {
+    clear: both;
+    width: 100%;
+    text-align: center;
+}
+
+.aboutUsSectionRightStructure.aboutUsSectionRightContent {
+    width: 100%;
+    text-align: center;
+}
+
+img.aboutUsSectionImage {
+    width: 100%!important;
+    left: 0px!important;
+    max-width: 300px;
+}
+
+.aboutUsSectionRightStructure {
+    width: 100%;
+    text-align: center;
 }
 }

@@ -352,7 +352,7 @@ activeMainTool.validateEmail = function (email) {
     location.href='../login';
  }
  
- activeMainTool.loadImage = function (src,productId) {
+ activeMainTool.loadImage = function (src,productId) { 
      if(typeof productId==='undefined'){
          productId='';
          console.log(src)
@@ -361,15 +361,29 @@ activeMainTool.validateEmail = function (email) {
      }
     var image = new Image();
     image.onload = function () {
-        $('html').find('img[src$="'+src+'"]').css('opacity','1');
         var product=activeProductManager.productsIds[productId];
+        $('html').find('img[src$="'+src+'"]')
+        .css('opacity','1')
+        .attr('src',product.imageSrc)
+        .parent()
+        .addClass('imgloaded');
+        product.withImage = true;
         product.imageLoaded = true;
+        // $('html').find('img[src$="'+src+'"]')
+        // $('#productPopupStructure .productImage').attr('src',product.imageSrc)
     }
     image.onerror = function () {
+        console.log("err")
         var product=activeProductManager.productsIds[productId];
         product.productImage = '';
-        product.withImage = false;
-        product.imageSrc = '../assets/company/sampleDiamond.png';
+        product.withImage = true;
+        product.imageLoaded = true;
+        product.imageSrc = product.sampleImageModel;
+        $('html').find('img[src$="'+src+'"]')
+        .css('opacity','1')
+        .attr('src',product.imageSrc)
+        .parent()
+        .addClass('imgloaded');
     }
     image.src = src;
  }

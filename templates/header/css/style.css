@@ -592,6 +592,7 @@
     top: 0px;
 }
 div#mainHeaderWrapper {
+    padding-bottom: 5px;
     display: none;
     /* -webkit-transition: all .6s ease; */
     -moz-transition: all .6s ease;
@@ -671,6 +672,11 @@ div#mainHeaderWrapper {
     overflow: hidden;
     transform: scale(0.7);
     transform-origin: top right;
+}
+@media screen and (max-width: 1020px){
+    .headerWidgetNews{
+        right: 181px;
+    }
 }
 .navBarTitle.navBarTitleRight.wishlistIconMobile img {
     width: 47px;

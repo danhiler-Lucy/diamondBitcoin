@@ -104,7 +104,7 @@ var content=
                         '</div>'+
                         '</div>'+
                     '<div class="itemWrapperBox">'+ //onclick="activeProductCard.openSmallCard('+"'"+product.id+"'"+' )"
-                '<div class="itemImage" style="background-image:url('+product.sampleImageModel+')" onclick="activeProductPopup.show('+"'"+product.id+"'"+')">'+
+                '<div class="itemImage" onclick="activeProductPopup.show('+"'"+product.id+"'"+')">'+
                                 '<img src="'+product.imageSrc+'"/>'+
                 '</div>'+
                 '<div class="itemAttrStructure" onclick="activeProductPopup.show('+"'"+product.id+"'"+')">'+

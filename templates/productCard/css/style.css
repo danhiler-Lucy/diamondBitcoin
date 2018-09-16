@@ -78,15 +78,22 @@
     height: auto;
     width: 100%;
     position: relative;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
     padding-top: 94.5%;
     overflow: hidden;
     display: flex;
     background-image: url(../../../assets/company/sampleDiamond.png?1);
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-color: #d5dae7;
-    background-position-y: 32px;
+    /* background-color: #d5dae7; */
+    background-position-x: center;
+}
+.imgloaded{
+    background-image: unset!important;
+    background-color: #191619!important;
+}
+.imgloaded img{
+transform: scale(0.8);
 }
 .productCardStructure .itemSection .itemImage img{
     width:100%;
@@ -628,7 +635,7 @@
           box-sizing: border-box;
           -moz-box-sizing: border-box;
           -webkit-box-sizing: border-box;
-          background-position-y: 13px;
+          /* background-position-y: 13px; */
       }
       .productCardStructure .itemSection .itemAttr{
               font-size: 12px;

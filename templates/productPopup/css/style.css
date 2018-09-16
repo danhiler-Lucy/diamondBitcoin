@@ -62,7 +62,7 @@
 
 .productPopupStructure .productPopupWrapper {
     width: 845px;
-    height: 553px;
+    height: 562px;
     border-radius: 3px;
     background-color: #ffffff;
     box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
@@ -87,6 +87,9 @@
 }
 
 .productPopupStructure .productImageStructure {
+    background-image: url(../../../assets/company/sampleDiamond.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
     width: 200px;
     height: 186px;
     border-radius: 3px;
@@ -110,6 +113,11 @@
     left: 0px;
     max-width: 100%;
     /* max-height: 100%; */
+    -webkit-transition: all .6s ease;
+    -moz-transition: all .6s ease;
+    -ms-transition: all .6s ease;
+    -o-transition: all .6s ease;
+    transition: all .6s ease;
 }
 
 .productPopupStructure .productImage360 {
@@ -553,13 +561,14 @@ table {
     /* display: grid; */
     /* margin-bottom: 5px; */
     /* width: 143px; */
-    height: 113px;
+    height: 135px;
     text-align: center;
     background-image: url(../../../assets/company/sampleDiamond.png);
-    background-size: 100%;
+    background-size: 115%;
     background-repeat: no-repeat;
     background-color: #d5dae7;
-    background-position-y: 6px;
+    background-position-y: 0px;
+    background-position-x: -8px;
 }
 
 .recommendedProductPopUpItemImage img {
@@ -575,10 +584,13 @@ table {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom:  20px;
+    /* padding-bottom:  20px; */
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.recommendedProductPopUpItemImage.imgloaded img{
+    top:-6px;
 }
 
 .recommendedProductPopUpItemAttr {
@@ -1767,14 +1779,14 @@ span.itemCostBitcoinIcon img {
     }
     .productPopupStructure .productPopupWrapper {
         width: 845px;
-        height: 572px;
+        height: 589px;
     }
     .productImage360_zoom {
         width: 76%;
     }
     .productPopupStructure .productImageStructure {
         width: 198px;
-        height: 200px;
+        height: 199px;
     }
     .productPopupStructure .productImage {
         width: 249px;
@@ -1794,13 +1806,19 @@ span.itemCostBitcoinIcon img {
     }
     .recommendedProductPopUpItemImage img {
         /* width: 136px; */
-        /* height: 117px; */
+        height: 155px;
         position: relative;
-        top: 0px;
+        /* top: -13px; */
     }
 }
 
 @media screen and (max-width: 1020px) {
+    .recommendedProductPopUpItemImage img {
+        /* width: 136px; */
+        height: 131px;
+        /* top: -6px; */
+
+    }
     .productInfoWrapperLeft {
         margin-top: 0px;
     }
@@ -2179,8 +2197,8 @@ span.itemCostBitcoinIcon img {
     .recommendedProductPopUpItemImage img {
         /* width: 100%; */
         /* height: unset; */
-        height: 100%;
-        width: unset;
+        /* height: 100%; */
+        /* width: unset; */
     }
     .recommendedProductTypeItemImage {
         width: 100%;

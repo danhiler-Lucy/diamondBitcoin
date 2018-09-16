@@ -258,6 +258,10 @@ table {
     transform: scale(1.02);
 }
 .recommendedProductPopUpItemImage img{
+    background-image: url(../../../assets/company/sampleDiamond.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    
     width: 170px;
     height: 141px;
     opacity: 0;

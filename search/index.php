@@ -61,7 +61,7 @@
                                                     SAVE SEARCH
                                             </div>-->
                                             <div class="poweredByLabel" >
-                                                    Powered by <img src="http://www.motiganz.com/wp-content/uploads/2017/04/cropped-motigaz-1.png" />
+                                                    Powered by <img src="../assets/company/logo-motiganz.png" />
                                             </div>
                                             <div class="mainfilterSearchClearButton"  onclick="activeMainPage.clearAllFilters()">
                                                     CLEAR
